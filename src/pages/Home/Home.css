@@ -1,0 +1,22 @@
+.hero {
+  padding-top: 48px;
+  padding-bottom: 32px;
+}
+
+.hero__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+/* Responsive */
+@media screen and (max-width: 960px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

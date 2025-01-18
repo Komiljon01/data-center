@@ -7,3 +7,12 @@ export interface NavbarListsTypes {
   path?: string;
   type: "link" | "modal";
 }
+
+export interface HeroCardsTypes {
+  id: string;
+  title: string;
+  text: string;
+  price: string;
+  btnText: string;
+  icon: IconType;
+}

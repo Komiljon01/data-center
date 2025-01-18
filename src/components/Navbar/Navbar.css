@@ -114,6 +114,7 @@
   border-radius: 16px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   line-height: normal;
+  z-index: 1;
 }
 
 .navbar__search-item .navbar__search-item_content a {
