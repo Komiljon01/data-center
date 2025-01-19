@@ -293,7 +293,109 @@
   gap: 32px;
 }
 
+/* Hosting Control Panel */
+.hosting__panel {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.hosting__panel .hosting__panel-intro {
+  color: #29426c;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.hosting__panel-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 0px 30px 0 64px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.hosting__panel-content {
+  max-width: 440px;
+  padding-top: 64px;
+}
+
+.hosting__panel-content .hosting__panel-content_text {
+  color: #345389;
+  font-size: 18px;
+}
+
+.hosting__panel-content .hosting__panel-content_title {
+  font-weight: 700;
+  color: #29426c;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.hosting__panel-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hosting__panel-feature {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hosting__panel-feature span {
+  width: 24px;
+  height: 24px;
+  background-color: #345389;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.hosting__panel-feature p {
+  font-size: 18px;
+  color: #29426c;
+}
+
+.hosting__panel-card_img {
+  max-width: 570px;
+  width: 100%;
+}
+
+.hosting__panel-card_img img:nth-child(1),
+.hosting__panel-card_img img:nth-child(2) {
+  width: 570px !important;
+  height: auto;
+  object-fit: cover;
+}
+
+.hosting__panel-card_img img:nth-child(2) {
+  display: none;
+}
+
 /* Responsive */
+@media screen and (max-width: 1100px) {
+  .hosting__panel-card {
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -0.5px 1px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  .hosting__panel-card_img img:nth-child(1) {
+    display: none;
+  }
+
+  .hosting__panel-card_img img:nth-child(2) {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .hero {
     padding-top: 0;
@@ -413,6 +515,31 @@
   .hosting__features-intro .hosting__features-text {
     display: none;
   }
+
+  .hosting__panel {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .hosting__panel .hosting__panel-intro {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .hosting__panel-card {
+    padding: 0;
+  }
+
+  .hosting__panel-card_img {
+    max-width: 100%;
+  }
+
+  .hosting__panel-card_img img:nth-child(1),
+  .hosting__panel-card_img img:nth-child(2) {
+    width: 100% !important;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -446,6 +573,16 @@
     max-width: 450px;
     width: 100%;
     padding: 0 10px;
+  }
+
+  .hosting__panel-content {
+    padding: 50px 20px 0;
+  }
+
+  .hosting__panel-content .hosting__panel-content_text,
+  .hosting__panel-content .hosting__panel-content_title,
+  .hosting__panel-feature p {
+    font-size: 16px;
   }
 }
 

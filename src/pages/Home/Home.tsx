@@ -6,16 +6,18 @@ import {
   HeroCardsData,
   HomeSlidersData,
   HostingFeaturesCardsData,
+  HostingPanelData,
 } from "../../constants";
 import { HeroCard, HostingCard, ServicesCard } from "../../components";
 import { IoGift } from "react-icons/io5";
-import { FaGlobe } from "react-icons/fa6";
+import { FaCheck, FaGlobe } from "react-icons/fa6";
 import { GrCertificate } from "react-icons/gr";
 
 // Slider
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { panelDesctopIMG, panelMobileIMG } from "../../assets";
 
 function Home() {
   const settings = {
@@ -208,6 +210,50 @@ function Home() {
             {HostingFeaturesCardsData.map((item) => (
               <HostingCard key={item.id} data={item} />
             ))}
+          </Box>
+        </Box>
+      </Box>
+
+      <Box component="div" className="hosting__panel">
+        <Box component="div" className="container">
+          <Typography variant="h2" className="hosting__panel-intro">
+            Hosting Control Panel
+          </Typography>
+
+          <Box className="hosting__panel-card">
+            <Box className="hosting__panel-content">
+              <Typography
+                variant="body1"
+                className="hosting__panel-content_text"
+              >
+                Data center control panel is a convenient and clear web
+                interface for managing all services, options and their settings
+                in one window
+              </Typography>
+
+              <Typography
+                variant="body1"
+                className="hosting__panel-content_title"
+              >
+                In the control panel you can:
+              </Typography>
+
+              <Box component="div" className="hosting__panel-features">
+                {HostingPanelData.map(({ id, text }) => (
+                  <Box component="div" key={id} className="hosting__panel-feature">
+                    <Box component="span">
+                      <FaCheck />
+                    </Box>
+                    <Typography variant="body1">{text}</Typography>
+                  </Box>
+                ))}
+              </Box>
+            </Box>
+
+            <Box className="hosting__panel-card_img">
+              <Box component="img" src={panelDesctopIMG} />
+              <Box component="img" src={panelMobileIMG} />
+            </Box>
           </Box>
         </Box>
       </Box>

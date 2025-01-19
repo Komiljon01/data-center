@@ -11,6 +11,7 @@ import {
   HeroCardsTypes,
   HomeSliderTypes,
   HostingFeaturesCardsTypes,
+  HostingPanelTypes,
   NavbarListsTypes,
 } from "./../types/index";
 import uuid4 from "uuid4";
@@ -233,5 +234,40 @@ export const HostingFeaturesCardsData: HostingFeaturesCardsTypes[] = [
     title: "Setting up access rights",
     text: "Manage access to the panel by assigning the necessary rights and issuing them to your employees.",
     icon: VscSettings,
+  },
+];
+
+export const HostingPanelData: HostingPanelTypes[] = [
+  {
+    id: uuid4(),
+    text: "Upload website files to the server,",
+  },
+  {
+    id: uuid4(),
+    text: "Create a database,",
+  },
+  {
+    id: uuid4(),
+    text: "Install popular CMS: 1C-Bitrix, Wordpress, Joomla, Drupal, etc.,",
+  },
+  {
+    id: uuid4(),
+    text: "Add a domain or buy a new one,",
+  },
+  {
+    id: uuid4(),
+    text: "Configure DNS records for your domain,",
+  },
+  {
+    id: uuid4(),
+    text: "Manage mailboxes,",
+  },
+  {
+    id: uuid4(),
+    text: "Run cron tasks,",
+  },
+  {
+    id: uuid4(),
+    text: "Work with the server via SSH.",
   },
 ];

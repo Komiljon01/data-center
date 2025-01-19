@@ -44,3 +44,8 @@ export interface HostingFeaturesCardsTypes {
   text: string;
   icon: IconType;
 }
+
+export interface HostingPanelTypes {
+  id: string;
+  text: string;
+}
