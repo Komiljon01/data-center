@@ -1,7 +1,12 @@
 import { Box, Button, Typography } from "@mui/material";
 import "./Home.css";
-import { HeroCardsData, HomeSlidersData } from "../../constants";
-import { HeroCard } from "../../components";
+import {
+  AdditionalServicesCards,
+  AdditionalServicesIntroCards,
+  HeroCardsData,
+  HomeSlidersData,
+} from "../../constants";
+import { HeroCard, ServicesCard } from "../../components";
 import { IoGift } from "react-icons/io5";
 import { FaGlobe } from "react-icons/fa6";
 import { GrCertificate } from "react-icons/gr";
@@ -143,6 +148,42 @@ function Home() {
                 );
               })}
             </Slider>
+          </Box>
+        </Box>
+      </Box>
+
+      <Box component="section" className="additional__services">
+        <Box component="div" className="container">
+          {/* Intro */}
+          <Box component="div" className="additional__services-intro">
+            <Typography variant="h2" className="additional__services-title">
+              Additional services
+            </Typography>
+            <Typography variant="body1" className="additional__services-text">
+              We offer a variety of additional services to solve various
+              problems. The required option can be connected and disconnected at
+              any time.
+            </Typography>
+          </Box>
+
+          {/* Cards */}
+          <Box component="div" className="services__cards">
+            {AdditionalServicesIntroCards.map((item) => (
+              <ServicesCard key={item.id} data={item} />
+            ))}
+          </Box>
+
+          <Typography variant="body1" className="additional__services-more">
+            And also:
+          </Typography>
+
+          <Box component="div" className="additional__services-cards">
+            {AdditionalServicesCards.map(({ id, title, text }) => (
+              <Box className="additional__sercices-card" key={id}>
+                <Typography variant="h5">{title}</Typography>
+                <Typography variant="body1">{text}</Typography>
+              </Box>
+            ))}
           </Box>
         </Box>
       </Box>

@@ -1,4 +1,4 @@
-.hero__card {
+.services__card {
   position: relative;
   padding: 48px;
   background-color: #fff;
@@ -8,43 +8,28 @@
   gap: 30px;
   box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  flex: 1;
 }
 
-.hero__card-content {
+.services__card-content {
   max-width: 380px;
   color: #345389;
 }
 
-.hero__card-content .hero__card-title {
+.services__card-content .services__card-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 120%;
 }
 
-.hero__card-content_price {
-  display: none;
-  align-items: center;
-  gap: 3px;
-  margin-top: 5px;
-}
-
-.hero__card-content_price p {
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.hero__card-content_price span {
-  font-size: 14px;
-}
-
-.hero__card-content .hero__card-text {
+.services__card-content .services__card-text {
   font-size: 18px;
   line-height: 140%;
   margin-top: 12px;
   margin-bottom: 36px;
 }
 
-.hero__card-btn {
+.services__card-btn {
   display: inline-block;
   line-height: 20px;
   min-height: 48px;
@@ -57,86 +42,58 @@
   transition: all 0.3s ease;
 }
 
-.hero__card-btn:hover {
+.services__card-btn:hover {
   background-color: rgba(54, 95, 167, 0.9);
 }
 
-.hero__card-price {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  color: #345389;
-}
-
-.hero__card-price span {
-  margin-top: 5px;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 20px;
-}
-
-.hero__card-price p {
-  font-size: 18px;
-  opacity: 0.6;
-}
-
-.hero__card-img {
+.services__card-img {
   position: absolute;
   color: #345389;
   opacity: 0.8;
   font-size: 100px;
-  bottom: -40px;
-  right: -25px;
+  bottom: -30px;
+  right: 5px;
 }
 
 /* Responsive */
 @media screen and (max-width: 960px) {
-  .hero__card {
+  .services__card {
     box-shadow: -0.5px 1px 1px rgba(0, 0, 0, 0.15);
   }
 
-  .hero__card-content .hero__card-title {
+  .services__card-content .services__card-title {
     font-size: 24px;
     line-height: 120%;
   }
 
-  .hero__card-content .hero__card-text {
+  .services__card-content .services__card-text {
     font-size: 16px;
     margin-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .hero__card {
+  .services__card {
     padding: 32px 24px;
   }
 
-  .hero__card-content_price {
-    display: flex;
-  }
-
-  .hero__card-price {
-    display: none;
-  }
-
-  .hero__card-content {
+  .services__card-content {
     max-width: 100%;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .hero__card-content .hero__card-text {
+  .services__card-content .services__card-text {
     margin-bottom: 25px;
   }
 
-  .hero__card-btn {
+  .services__card-btn {
     min-height: auto;
     padding: 10px 25px;
     font-size: 14px;
   }
 
-  .hero__card-img {
+  .services__card-img {
     opacity: 0.5;
     font-size: 80px;
     bottom: -30px;

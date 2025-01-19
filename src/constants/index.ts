@@ -1,14 +1,16 @@
 import { FaCreditCard, FaGlobe, FaServer } from "react-icons/fa6";
 import {
+  AdditionalServicesCardsTypes,
+  AdditionalServicesIntroTypes,
   HeroCardsTypes,
   HomeSliderTypes,
   NavbarListsTypes,
 } from "./../types/index";
 import uuid4 from "uuid4";
-import { MdBook } from "react-icons/md";
+import { MdBook, MdDisplaySettings } from "react-icons/md";
 import { BsCloudsFill, BsFillClipboard2CheckFill } from "react-icons/bs";
 import { FiLogIn } from "react-icons/fi";
-import { CgWebsite } from "react-icons/cg";
+import { CgArrowsExchange, CgWebsite } from "react-icons/cg";
 import {
   digitalIMG,
   gerbIMG,
@@ -119,5 +121,45 @@ export const HomeSlidersData: HomeSliderTypes[] = [
     text: "Virtual Reception of the President of the Republic of Uzbekistan",
     img: gerbIMG,
     type: "content",
+  },
+];
+
+export const AdditionalServicesIntroCards: AdditionalServicesIntroTypes[] = [
+  {
+    id: uuid4(),
+    title: "Website transfer",
+    text: "Transfer your sites and domains to Timeweb hosting while maintaining your balance, leaving only a request to technical support.",
+    btnText: "Transfer sites",
+    icon: CgArrowsExchange,
+  },
+  {
+    id: uuid4(),
+    title: "Turnkey website",
+    text: "Order a turnkey website development for 20,000 rubles or create a website for free using a website builder.",
+    btnText: "Order a website",
+    icon: MdDisplaySettings,
+  },
+];
+
+export const AdditionalServicesCards: AdditionalServicesCardsTypes[] = [
+  {
+    id: uuid4(),
+    title: "Website Protector",
+    text: "An automatic vulnerability scanner that checks all sites on your account for malicious code and notifies you of the results.",
+  },
+  {
+    id: uuid4(),
+    title: "Website Accelerator",
+    text: "A service for optimizing website performance that will analyze current indicators and help improve performance without making changes to the code.",
+  },
+  {
+    id: uuid4(),
+    title: "DDoS and CDN protection",
+    text: "Reliable reflection of attacks of any complexity at levels L3, L4 and L7 and high speed of content delivery to your users.",
+  },
+  {
+    id: uuid4(),
+    title: "Additional IP address",
+    text: "Dedicated IPv4 address for setting up DDoS protection and hosting websites and domains that require their own unique address.",
   },
 ];

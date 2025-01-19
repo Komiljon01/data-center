@@ -23,3 +23,17 @@ export interface HomeSliderTypes {
   img: string;
   type: "image" | "content";
 }
+
+export interface AdditionalServicesIntroTypes {
+  id: string;
+  title: string;
+  text: string;
+  btnText: string;
+  icon: IconType;
+}
+
+export interface AdditionalServicesCardsTypes {
+  id: string;
+  title: string;
+  text: string;
+}
