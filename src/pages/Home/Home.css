@@ -9,6 +9,195 @@
   gap: 32px;
 }
 
+/* Home Domains */
+
+/* Home Domains Transfer */
+.home__domains-transfer {
+  position: relative;
+  min-height: 244px;
+  padding: 44px 45px 34px;
+  border-radius: 16px;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.home__domains-transfer .home__domains-transfer_title1,
+.home__domains-transfer .home__domains-transfer_title2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.home__domains-transfer .home__domains-transfer_title1 {
+  color: royalblue;
+}
+
+.home__domains-transfer .home__domains-transfer_title2 {
+  color: darkblue;
+}
+
+.home__domains-transfer_footer {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.home__domains-transfer_footer button {
+  display: inline-block;
+  line-height: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 32px;
+  border-radius: 6px;
+  background-color: #345389;
+  color: #fff;
+  transition: all 0.3s ease;
+  text-transform: none;
+}
+
+.home__domains-transfer_footer button:hover {
+  background-color: rgba(54, 95, 167, 0.9);
+}
+
+.home__domains-transfer_prize {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.home__domains-transfer_prize span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(52, 83, 137, 0.3);
+  color: #29426c;
+}
+
+.home__domains-transfer_prize p {
+  max-width: 387px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #263c63;
+}
+
+.home__domains-transfer_icon {
+  position: absolute;
+  color: #345389;
+  opacity: 0.2;
+  font-size: 300px;
+  top: 0px;
+  right: 0;
+}
+
+/* Domain register */
+.domain__register {
+  position: relative;
+  min-height: 244px;
+  padding: 80px;
+  border-radius: 16px;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.domain__register .domain__register-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #345389;
+}
+
+.domain__register .domain__register-title span {
+  font-weight: 400;
+}
+
+.domain__register .domain__register-text {
+  color: #345389;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.domain__register-form {
+  max-width: 802px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(54, 95, 167, 0.2);
+  height: 64px;
+  border-radius: 8px;
+  padding: 0 20px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.domain__register-form input {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px 0 0;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  outline: none;
+  color: #345389;
+  background-color: #fff;
+}
+
+.domain__register-form input::placeholder {
+  font-size: 14px;
+  color: #345389;
+}
+
+.domain__register-form button {
+  line-height: 20px;
+  min-height: 48px;
+  padding: 0 32px;
+  background-color: #345389;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.domain__register-form button:hover {
+  background-color: rgba(54, 95, 167, 0.9);
+}
+
+.domain__register-icon {
+  position: absolute;
+  font-size: 200px;
+  color: #345389;
+  opacity: 0.15;
+  left: 0;
+  top: 0;
+}
+
+/* Home Domain sliders */
+.home__domains-sliders {
+  margin-top: 100px;
+  position: relative;
+}
+
+.home__domains-sliders .home__domains-slider {
+  height: 150px;
+  background-color: transparent;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 0 20px;
+}
+
+.home__domains-sliders .home__domains-slider p {
+  font-size: 14px;
+  text-align: left;
+  color: #345389;
+  font-weight: 500;
+}
+
 /* Responsive */
 @media screen and (max-width: 960px) {
   .hero {
@@ -18,5 +207,140 @@
   .hero__cards {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  .home__domains-transfer {
+    min-height: 400px;
+    text-align: center;
+    box-shadow: -0.5px 1px 1px rgba(0, 0, 0, 0.15);
+    padding: 24px 20px 0;
+  }
+
+  .home__domains-transfer_content {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home__domains-transfer .home__domains-transfer_title1,
+  .home__domains-transfer .home__domains-transfer_title2 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .home__domains-transfer_footer {
+    flex-direction: column-reverse;
+  }
+
+  .home__domains-transfer_footer button {
+    width: 100%;
+  }
+
+  .home__domains-transfer_prize span {
+    display: none;
+  }
+
+  .home__domains-transfer_icon {
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .domain__register {
+    box-shadow: -0.5px 1px 1px rgba(0, 0, 0, 0.15);
+    padding: 32px;
+    min-height: auto;
+  }
+
+  .domain__register .domain__register-title {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .domain__register .domain__register-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .domain__register-form {
+    height: 55px;
+  }
+
+  .domain__register-form button {
+    padding: 10px 32px;
+    min-height: auto;
+  }
+
+  .domain__register-icon {
+    font-size: 150px;
+  }
+
+  .home__domains-sliders {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home__domains-sliders .home__domains-slider {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .home__domains-sliders .home__domains-slider p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home__domains-transfer_icon {
+    top: 300px;
+    font-size: 150px;
+  }
+
+  .domain__register {
+    padding: 32px 20px;
+  }
+
+  .home__domains-slider {
+    max-width: 450px;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home__domains-transfer_footer button {
+    padding: 12px;
+  }
+
+  .home__domains-transfer {
+    padding-bottom: 20px;
+  }
+
+  .home__domains-transfer_icon {
+    font-size: 100px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .domain__register-form {
+    height: auto;
+    gap: 10px;
+    padding: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .domain__register-form input {
+    border: 1px solid rgba(52, 83, 137, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .domain__register-form button {
+    width: 100%;
   }
 }

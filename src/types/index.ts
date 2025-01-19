@@ -16,3 +16,10 @@ export interface HeroCardsTypes {
   btnText: string;
   icon: IconType;
 }
+
+export interface HomeSliderTypes {
+  id: string;
+  text?: string;
+  img: string;
+  type: "image" | "content";
+}

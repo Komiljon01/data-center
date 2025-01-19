@@ -1,10 +1,21 @@
 import { FaCreditCard, FaGlobe, FaServer } from "react-icons/fa6";
-import { HeroCardsTypes, NavbarListsTypes } from "./../types/index";
+import {
+  HeroCardsTypes,
+  HomeSliderTypes,
+  NavbarListsTypes,
+} from "./../types/index";
 import uuid4 from "uuid4";
 import { MdBook } from "react-icons/md";
 import { BsCloudsFill, BsFillClipboard2CheckFill } from "react-icons/bs";
 import { FiLogIn } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
+import {
+  digitalIMG,
+  gerbIMG,
+  lexuzIMG,
+  mygovIMG,
+  opendataIMG,
+} from "../assets";
 
 export const NavbarListsData: NavbarListsTypes[] = [
   { id: uuid4(), text: "Payment", icon: FaCreditCard, type: "modal" },
@@ -59,5 +70,54 @@ export const HeroCardsData: HeroCardsTypes[] = [
     price: "180k",
     btnText: "Try it for free",
     icon: CgWebsite,
+  },
+];
+
+export const HomeSlidersData: HomeSliderTypes[] = [
+  {
+    id: uuid4(),
+    text: "Ministry of Digital Technologies of the Republic of Uzbekistan",
+    img: digitalIMG,
+    type: "content",
+  },
+  {
+    id: uuid4(),
+    text: "The Government portal of the Republic of Uzbekistan",
+    img: gerbIMG,
+    type: "content",
+  },
+  {
+    id: uuid4(),
+    img: mygovIMG,
+    type: "image",
+  },
+  {
+    id: uuid4(),
+    text: "The Government portal of the Republic of Uzbekistan",
+    img: gerbIMG,
+    type: "content",
+  },
+  {
+    id: uuid4(),
+    img: lexuzIMG,
+    type: "image",
+  },
+  {
+    id: uuid4(),
+    text: "Official web-site of the President of Uzbekistan",
+    img: gerbIMG,
+    type: "content",
+  },
+  {
+    id: uuid4(),
+    text: "Open Data Portal",
+    img: opendataIMG,
+    type: "content",
+  },
+  {
+    id: uuid4(),
+    text: "Virtual Reception of the President of the Republic of Uzbekistan",
+    img: gerbIMG,
+    type: "content",
   },
 ];
