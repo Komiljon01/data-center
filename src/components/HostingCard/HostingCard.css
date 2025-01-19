@@ -1,0 +1,35 @@
+.hosting__features-card {
+  padding: 36px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.1);
+  color: #345389;
+}
+
+.hosting__features-card-img {
+  color: darkcyan;
+  font-size: 30px;
+}
+
+.hosting__features-card .hosting__features-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 16px 0;
+}
+
+.hosting__features-card .hosting__features-card-text {
+  font-size: 16px;
+  font-size: normal;
+}
+
+@media screen and (max-width: 960px) {
+  .hosting__features-card {
+    box-shadow: -0.5px 1px 1px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hosting__features-card {
+    padding: 28px;
+  }
+}

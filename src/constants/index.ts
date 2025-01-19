@@ -1,14 +1,25 @@
-import { FaCreditCard, FaGlobe, FaServer } from "react-icons/fa6";
+import {
+  FaClock,
+  FaCreditCard,
+  FaGlobe,
+  FaLocationDot,
+  FaServer,
+} from "react-icons/fa6";
 import {
   AdditionalServicesCardsTypes,
   AdditionalServicesIntroTypes,
   HeroCardsTypes,
   HomeSliderTypes,
+  HostingFeaturesCardsTypes,
   NavbarListsTypes,
 } from "./../types/index";
 import uuid4 from "uuid4";
-import { MdBook, MdDisplaySettings } from "react-icons/md";
-import { BsCloudsFill, BsFillClipboard2CheckFill } from "react-icons/bs";
+import { MdBook, MdDisplaySettings, MdOutlineDevices } from "react-icons/md";
+import {
+  BsBookmarkCheckFill,
+  BsCloudsFill,
+  BsFillClipboard2CheckFill,
+} from "react-icons/bs";
 import { FiLogIn } from "react-icons/fi";
 import { CgArrowsExchange, CgWebsite } from "react-icons/cg";
 import {
@@ -18,6 +29,10 @@ import {
   mygovIMG,
   opendataIMG,
 } from "../assets";
+import { FaRegCheckCircle } from "react-icons/fa";
+import { HiMiniPercentBadge } from "react-icons/hi2";
+import { IoCalendarSharp, IoShieldCheckmark } from "react-icons/io5";
+import { VscSettings } from "react-icons/vsc";
 
 export const NavbarListsData: NavbarListsTypes[] = [
   { id: uuid4(), text: "Payment", icon: FaCreditCard, type: "modal" },
@@ -161,5 +176,62 @@ export const AdditionalServicesCards: AdditionalServicesCardsTypes[] = [
     id: uuid4(),
     title: "Additional IP address",
     text: "Dedicated IPv4 address for setting up DDoS protection and hosting websites and domains that require their own unique address.",
+  },
+];
+
+export const HostingFeaturesCardsData: HostingFeaturesCardsTypes[] = [
+  {
+    id: uuid4(),
+    title: "We have been working since 2006",
+    text: "We already serve 700,000 sites for 200,000 clients from Russia and neighboring countries",
+    icon: FaRegCheckCircle,
+  },
+  {
+    id: uuid4(),
+    title: "Price + quality",
+    text: "We monitor the market and make sure that each of our clients gets the best for their money",
+    icon: HiMiniPercentBadge,
+  },
+  {
+    id: uuid4(),
+    title: "24/7 support",
+    text: "We respond at any time of the day or night - without weekends, holidays and lunch breaks",
+    icon: BsBookmarkCheckFill,
+  },
+  {
+    id: uuid4(),
+    title: "Uninterrupted operation",
+    text: "We guarantee website availability at 99.98% SLA",
+    icon: FaClock,
+  },
+  {
+    id: uuid4(),
+    title: "Reliable data centers",
+    text: "Data centers in Russia and Kazakhstan meet international security standards",
+    icon: FaLocationDot,
+  },
+  {
+    id: uuid4(),
+    title: "Your own control panel",
+    text: "For intuitive management of hosting, mail, domains and other services",
+    icon: MdOutlineDevices,
+  },
+  {
+    id: uuid4(),
+    title: "SSL certificate",
+    text: "We will help you issue a free Let's Encrypt certificate for your domain and set up secure operation via HTTPS",
+    icon: IoShieldCheckmark,
+  },
+  {
+    id: uuid4(),
+    title: "Daily backups",
+    text: "We create backups of your sites every day to ensure your data is always safe.",
+    icon: IoCalendarSharp,
+  },
+  {
+    id: uuid4(),
+    title: "Setting up access rights",
+    text: "Manage access to the panel by assigning the necessary rights and issuing them to your employees.",
+    icon: VscSettings,
   },
 ];

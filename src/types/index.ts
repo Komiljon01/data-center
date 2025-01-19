@@ -37,3 +37,10 @@ export interface AdditionalServicesCardsTypes {
   title: string;
   text: string;
 }
+
+export interface HostingFeaturesCardsTypes {
+  id: string;
+  title: string;
+  text: string;
+  icon: IconType;
+}

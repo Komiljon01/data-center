@@ -5,8 +5,9 @@ import {
   AdditionalServicesIntroCards,
   HeroCardsData,
   HomeSlidersData,
+  HostingFeaturesCardsData,
 } from "../../constants";
-import { HeroCard, ServicesCard } from "../../components";
+import { HeroCard, HostingCard, ServicesCard } from "../../components";
 import { IoGift } from "react-icons/io5";
 import { FaGlobe } from "react-icons/fa6";
 import { GrCertificate } from "react-icons/gr";
@@ -183,6 +184,29 @@ function Home() {
                 <Typography variant="h5">{title}</Typography>
                 <Typography variant="body1">{text}</Typography>
               </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+
+      <Box component="div" className="hosting__features">
+        <Box component="div" className="container">
+          {/* Intro */}
+          <Box component="div" className="hosting__features-intro">
+            <Typography variant="h2" className="hosting__features-title">
+              Data Center — modern and reliable hosting
+            </Typography>
+            <Typography variant="body1" className="hosting__features-text">
+              With us you can buy hosting for a website of any complexity: from
+              a simple business card website to complex applications based on
+              1C-Bitrix.
+            </Typography>
+          </Box>
+
+          {/* Cards */}
+          <Box component="div" className="hosting__features-cards">
+            {HostingFeaturesCardsData.map((item) => (
+              <HostingCard key={item.id} data={item} />
             ))}
           </Box>
         </Box>
