@@ -1,0 +1,148 @@
+.footer {
+  margin-bottom: 50px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #300994;
+  transition: color 0.3s ease;
+}
+
+.footer__logo:hover {
+  color: #3c0bb9;
+}
+
+.footer__logo .footer__logo-text {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.footer__contacts-tel p {
+  color: #345389;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.footer__contacts-tel a {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  color: orange;
+}
+
+.footer__contacts_lists {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__contacts_lists a {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(67, 73, 121, 0.8);
+  color: #fff;
+  padding: 8px;
+  border-radius: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.footer__contacts_lists a:hover {
+  background-color: rgba(67, 73, 121, 0.7);
+}
+
+.footer__clients,
+.footer__partners,
+.footer__products,
+.footer__about {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__clients h5,
+.footer__partners h5,
+.footer__products h5,
+.footer__about h5 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #29426c;
+}
+
+.footer__clients a,
+.footer__partners a,
+.footer__products a,
+.footer__about a {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #29426c;
+  transition: all 0.3s ease;
+}
+
+.footer__clients a:hover,
+.footer__partners a:hover,
+.footer__products a:hover,
+.footer__about a:hover {
+  color: orange;
+}
+
+/* Responsive */
+@media screen and (max-width: 960px) {
+  .footer__wrapper {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+
+  .footer__contacts {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__wrapper {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer__contacts {
+    gap: 20px;
+  }
+
+  .footer__contacts-tel a {
+    font-size: 22px;
+  }
+
+  .footer__contacts_lists {
+    gap: 10px;
+  }
+
+  .footer__contacts_lists a {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .footer {
+    margin-bottom: 30px;
+  }
+}

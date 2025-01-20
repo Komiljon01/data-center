@@ -8,6 +8,7 @@ import {
 import {
   AdditionalServicesCardsTypes,
   AdditionalServicesIntroTypes,
+  FooterListsTypes,
   HeroCardsTypes,
   HomeSliderTypes,
   HostingFeaturesCardsTypes,
@@ -269,5 +270,113 @@ export const HostingPanelData: HostingPanelTypes[] = [
   {
     id: uuid4(),
     text: "Work with the server via SSH.",
+  },
+];
+
+export const footerCliendsListsData: FooterListsTypes[] = [
+  {
+    id: uuid4(),
+    text: "Website builder",
+  },
+  {
+    id: uuid4(),
+    text: "Compare services",
+  },
+  {
+    id: uuid4(),
+    text: "Why choose us",
+  },
+  {
+    id: uuid4(),
+    text: "Clients and partners",
+  },
+  {
+    id: uuid4(),
+    text: "Questions and Answers",
+  },
+  {
+    id: uuid4(),
+    text: "Agreement",
+  },
+  {
+    id: uuid4(),
+    text: "News",
+  },
+  {
+    id: uuid4(),
+    text: "Stock",
+  },
+];
+
+export const footerPartnersListsData: FooterListsTypes[] = [
+  {
+    id: uuid4(),
+    text: "For webmasters",
+  },
+  {
+    id: uuid4(),
+    text: "For integrators",
+  },
+  {
+    id: uuid4(),
+    text: "Our logo",
+  },
+  {
+    id: uuid4(),
+    text: "Webmaster Agreement",
+  },
+  {
+    id: uuid4(),
+    text: "Peering policy",
+  },
+];
+
+export const footerProductsListsData: FooterListsTypes[] = [
+  {
+    id: uuid4(),
+    text: "Hosting",
+  },
+  {
+    id: uuid4(),
+    text: "VDS and VPS",
+  },
+  {
+    id: uuid4(),
+    text: "Mail for business",
+  },
+  {
+    id: uuid4(),
+    text: "Domains",
+  },
+  {
+    id: uuid4(),
+    text: "Dedicated servers",
+  },
+  {
+    id: uuid4(),
+    text: "Reviews widget for website",
+  },
+];
+
+export const footerAboutCompanyListsData: FooterListsTypes[] = [
+  {
+    id: uuid4(),
+    text: "Contact information",
+  },
+  {
+    id: uuid4(),
+    text: "Our team",
+  },
+  {
+    id: uuid4(),
+    text: "Data centers",
+  },
+  {
+    id: uuid4(),
+    text: "Useful articles",
+  },
+  {
+    id: uuid4(),
+    text: "Report vulnerabilities",
   },
 ];

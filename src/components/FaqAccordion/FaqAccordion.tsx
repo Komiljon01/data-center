@@ -11,7 +11,7 @@ import { FaAngleDown } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { clickLogo, paymeLogo, uzumLogo } from "../../assets";
 
-const AccordionStyled = styled(Accordion)({
+const AccordionStyled = styled(Accordion)(({ theme }) => ({
   "&.MuiAccordion-root": {
     backgroundColor: "transparent",
     border: "none",
@@ -40,6 +40,12 @@ const AccordionStyled = styled(Accordion)({
         justifyContent: "center",
         borderRadius: "50%",
         color: "#29426c",
+
+        [theme.breakpoints.down("sm")]: {
+          width: "auto",
+          height: "auto",
+          backgroundColor: "transparent",
+        },
       },
 
       ".MuiAccordionSummary-content": {
@@ -55,7 +61,7 @@ const AccordionStyled = styled(Accordion)({
       gap: "20px",
     },
   },
-});
+}));
 
 function FaqAccordion() {
   return (

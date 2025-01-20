@@ -196,7 +196,7 @@ function Home() {
         </Box>
       </Box>
 
-      <Box component="div" className="hosting__features">
+      <Box component="section" className="hosting__features">
         <Box component="div" className="container">
           {/* Intro */}
           <Box component="div" className="hosting__features-intro">
@@ -219,7 +219,7 @@ function Home() {
         </Box>
       </Box>
 
-      <Box component="div" className="hosting__panel">
+      <Box component="section" className="hosting__panel">
         <Box component="div" className="container">
           <Typography variant="h2" className="hosting__panel-intro">
             Hosting Control Panel
@@ -267,7 +267,7 @@ function Home() {
         </Box>
       </Box>
 
-      <Box component="div" className="faq">
+      <Box component="section" className="faq">
         <Box component="div" className="container">
           <Typography variant="h2" className="faq__intro">
             Questions and Answers

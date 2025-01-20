@@ -49,3 +49,8 @@ export interface HostingPanelTypes {
   id: string;
   text: string;
 }
+
+export interface FooterListsTypes {
+  id: string;
+  text: string;
+}

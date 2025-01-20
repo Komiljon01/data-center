@@ -69,3 +69,12 @@
     font-size: 16px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .faq__accordion-payment img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
