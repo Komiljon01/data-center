@@ -8,7 +8,12 @@ import {
   HostingFeaturesCardsData,
   HostingPanelData,
 } from "../../constants";
-import { HeroCard, HostingCard, ServicesCard } from "../../components";
+import {
+  FaqAccordion,
+  HeroCard,
+  HostingCard,
+  ServicesCard,
+} from "../../components";
 import { IoGift } from "react-icons/io5";
 import { FaCheck, FaGlobe } from "react-icons/fa6";
 import { GrCertificate } from "react-icons/gr";
@@ -240,7 +245,11 @@ function Home() {
 
               <Box component="div" className="hosting__panel-features">
                 {HostingPanelData.map(({ id, text }) => (
-                  <Box component="div" key={id} className="hosting__panel-feature">
+                  <Box
+                    component="div"
+                    key={id}
+                    className="hosting__panel-feature"
+                  >
                     <Box component="span">
                       <FaCheck />
                     </Box>
@@ -254,6 +263,17 @@ function Home() {
               <Box component="img" src={panelDesctopIMG} />
               <Box component="img" src={panelMobileIMG} />
             </Box>
+          </Box>
+        </Box>
+      </Box>
+
+      <Box component="div" className="faq">
+        <Box component="div" className="container">
+          <Typography variant="h2" className="faq__intro">
+            Questions and Answers
+          </Typography>
+          <Box component="div" className="faq__accordions">
+            <FaqAccordion />
           </Box>
         </Box>
       </Box>

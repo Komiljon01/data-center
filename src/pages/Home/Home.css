@@ -377,6 +377,24 @@
   display: none;
 }
 
+/* FAQ */
+.faq {
+  margin-bottom: 50px;
+}
+
+.faq .faq__intro {
+  color: #29426c;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.faq__accordions {
+  max-width: 1010px;
+  margin: 0 auto;
+}
+
 /* Responsive */
 @media screen and (max-width: 1100px) {
   .hosting__panel-card {
@@ -539,6 +557,16 @@
     width: 100% !important;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
+  }
+
+  .faq__accordions {
+    max-width: 720px;
+  }
+
+  .faq .faq__intro {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 32px;
   }
 }
 

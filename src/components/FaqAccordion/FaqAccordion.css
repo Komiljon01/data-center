@@ -1,0 +1,71 @@
+.faq__accordion-title.MuiTypography-root {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.faq__accordion-content .faq__accordion-text {
+  color: #29426c;
+  font-size: 18px;
+}
+
+.faq__accordion-content .faq__accordion-text span {
+  font-weight: 700;
+}
+
+.faq__accordion-content .faq__accordion-text a {
+  color: orangered;
+}
+
+.faq__accordion-lists_num {
+  list-style: decimal;
+}
+
+.faq__accordion-lists_circle {
+  list-style: disc;
+}
+
+.faq__accordion-lists_num,
+.faq__accordion-lists_circle {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  gap: 20px;
+}
+
+.faq__accordion-lists_num li,
+.faq__accordion-lists_circle li {
+  font-size: 16px;
+  color: #29426c;
+}
+
+.faq__accordion-lists_num li span,
+.faq__accordion-lists_circle li span {
+  font-weight: 700;
+}
+
+.faq__accordion-lists_num li a,
+.faq__accordion-lists_circle li a {
+  font-size: 16px;
+  color: orangered;
+}
+
+.faq__accordion-payment {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.faq__accordion-payment img {
+  width: 150px;
+}
+
+@media screen and (max-width: 960px) {
+  .faq__accordion-title.MuiTypography-root {
+    font-size: 18px;
+  }
+
+  .faq__accordion-content .faq__accordion-text {
+    font-size: 16px;
+  }
+}
