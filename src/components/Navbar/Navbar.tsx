@@ -29,7 +29,7 @@ function Navbar() {
   // Accordion toggle
   const [expanded, setExpanded] = useState<string | false>(false);
   const handleChange =
-    (panel: string) => (event: SyntheticEvent, isExpanded: boolean) => {
+    (panel: string) => (_: SyntheticEvent, isExpanded: boolean) => {
       setExpanded(isExpanded ? panel : false);
     };
 

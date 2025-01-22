@@ -19,25 +19,28 @@ import { AiOutlineThunderbolt } from "react-icons/ai";
 import { VscSettings } from "react-icons/vsc";
 import { TabListStyled, AccordionStyled } from ".";
 import TariffContent from "./TariffsContent";
+import { TarriffsTypes } from "../../types";
 
 const Tariffs: React.FC = () => {
-  const [mainTab, setMainTab] = useState("classical");
-  const [subTab, setSubTab] = useState("monthly");
+  const [mainTab, setMainTab] = useState<keyof TarriffsTypes>("classical");
+  const [subTab, setSubTab] =
+    useState<keyof TarriffsTypes["classical"]>("monthly");
   const [isExpanded, setIsExpanded] = useState(false);
 
   // Main Tabs action
   const handleMainTabChange = (_: ChangeEvent<unknown>, newValue: string) => {
-    setMainTab(newValue);
+    setMainTab(newValue as keyof TarriffsTypes);
   };
   const handleSubTabChange = (_: ChangeEvent<unknown>, newValue: string) => {
-    setSubTab(newValue);
+    setSubTab(newValue as keyof TarriffsTypes["classical"]);
   };
 
   const currentData = TarrifsData[mainTab][subTab];
 
   // Filters action = mobile tabs
-  const changeMainTab = (val: string) => setMainTab(val);
-  const changeSubTab = (val: string) => setSubTab(val);
+  const changeMainTab = (val: keyof TarriffsTypes) => setMainTab(val);
+  const changeSubTab = (val: keyof TarriffsTypes["classical"]) =>
+    setSubTab(val);
 
   const handleExpandedChange = (
     _: ChangeEvent<unknown>,
