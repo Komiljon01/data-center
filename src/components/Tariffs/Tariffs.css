@@ -1,0 +1,318 @@
+.tariffs__intro-content {
+  max-width: 1000px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tariffs__intro-content div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tariffs__intro-content span {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #274068;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tariffs__intro-content p {
+  font-size: 15px;
+  color: #274068;
+}
+
+.tariffs__tabs-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.tariffs__tabs-wrapper .tariffs__main-tabs,
+.tariffs__tabs-wrapper .tariffs__sub-tabs {
+  flex: 1;
+}
+
+.tariffs__filter {
+  margin: 30px 0;
+  display: none;
+}
+
+.tariff__card {
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(77, 59, 59, 0.08);
+  background-color: #fff;
+}
+
+.customer-choice {
+  position: relative;
+  border: 2px solid #3068c3;
+  border-top: none;
+}
+
+.customer-choice .tariff__card-top {
+  border-top: 2px solid #3068c3;
+}
+
+.tariff__card-top {
+  padding: 22px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: #8eb7fa;
+  min-height: 166px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.customer__choice-text {
+  position: absolute;
+  font-size: 11px;
+  height: 28px;
+  line-height: 28px;
+  right: 0;
+  top: 0;
+  font-weight: 600;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #3068c3;
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.tariff__card-top .tariff__card-top_title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #3068c3;
+}
+
+.tariff__card-top .tariff__card-top_text {
+  font-size: 14px;
+  line-height: 120%;
+  color: #2f4e7f;
+  margin-top: 5px;
+}
+
+.tariff__card-prices {
+  display: flex;
+  align-items: center;
+  color: #274068;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tariff__card-prices h4 {
+  font-size: 30px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.tariff__card-prices del {
+  font-size: 24px;
+  line-height: 26px;
+  opacity: 0.5;
+}
+
+.tariff__card-prices sup {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 600;
+}
+
+.tariff__card-content {
+  padding: 22px 22px 14px;
+}
+
+.tariff__card-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tariff__card-lists p {
+  display: flex;
+  align-items: center;
+  gap: 0 4px;
+  font-size: 16px;
+  flex-wrap: wrap;
+}
+
+.tariff__card-lists p svg {
+  color: #3068c3;
+  font-size: 10px;
+}
+
+.tariff__card-transfer_wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 22px 22px 14px;
+}
+
+.tariff__card-transfer h5 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.tariff__card-transfer p {
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.tariff__card-content button,
+.tariff__card-transfer_wrapper button {
+  margin-top: 48px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #274068;
+  transition: all 0.3s ease;
+  padding: 0 32px;
+  height: 48px;
+}
+
+.tariff__card-content button:hover,
+.tariff__card-transfer_wrapper button:hover {
+  background-color: #3068c3;
+}
+
+.customer-choice .tariff__card-content button {
+  background-color: #3068c3;
+}
+
+.customer-choice .tariff__card-content button:hover {
+  background-color: #5e86c6;
+}
+
+.tariff__card-footer_text {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 16px;
+  color: #3068c3;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media screen and (max-width: 960px) {
+  .tariffs__intro-content {
+    display: none;
+  }
+
+  .tariffs__tabs-wrapper {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .tariffs__tabs-wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    gap: 10px;
+  }
+
+  .tariffs__tabs-wrapper .tariffs__main-tabs,
+  .tariffs__tabs-wrapper .tariffs__sub-tabs {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tariffs__filter {
+    display: block;
+  }
+
+  .tariffs__tabs-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .tariff__card-top {
+    padding: 20px 15px 15px;
+  }
+
+  .tariff__card-top .tariff__card-top_title {
+    font-size: 18px;
+  }
+
+  .tariff__card-top .tariff__card-top_text {
+    font-size: 13px;
+  }
+
+  .tariff__card-prices h4 {
+    font-size: 25px;
+  }
+
+  .tariff__card-prices del {
+    font-size: 20px;
+  }
+
+  .tariff__card-prices sup {
+    font-size: 12px;
+  }
+
+  .tariff__card-content {
+    padding: 15px;
+  }
+
+  .tariff__card-lists {
+    gap: 5px;
+  }
+
+  .tariff__card-lists p {
+    font-size: 14px;
+  }
+
+  .tariff__card-transfer_wrapper {
+    padding: 20px 15px 15px;
+  }
+
+  .tariff__card-transfer h5 {
+    font-size: 16px;
+  }
+
+  .tariff__card-transfer p {
+    font-size: 13px;
+  }
+
+  .tariff__card-content button,
+  .tariff__card-transfer_wrapper button {
+    font-size: 12px;
+    height: auto;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .tariff__card-footer_text {
+    margin-top: 10px;
+  }
+}

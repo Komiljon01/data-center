@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { NavbarListsData } from "../../constants";
 import "./NavbarLists.css";
 import { Link } from "react-router-dom";
+import React from "react";
 
 function NavbarLists({ menu }: { menu: boolean }) {
   return (
@@ -10,10 +11,9 @@ function NavbarLists({ menu }: { menu: boolean }) {
         const { id, path, text, icon: Icon, type } = item;
 
         return (
-          <>
+          <React.Fragment key={id}>
             {type === "link" && (
               <Link
-                key={id}
                 to={path as string}
                 className={`navbar__list ${menu && "navbar__menu-item"}`}
               >
@@ -29,7 +29,6 @@ function NavbarLists({ menu }: { menu: boolean }) {
             {type === "modal" && (
               <Box
                 component="div"
-                key={id}
                 className={`navbar__list ${menu && "navbar__menu-item"}`}
               >
                 <Box component="span">
@@ -40,7 +39,7 @@ function NavbarLists({ menu }: { menu: boolean }) {
                 </Typography>
               </Box>
             )}
-          </>
+          </React.Fragment>
         );
       })}
     </>

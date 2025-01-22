@@ -16,7 +16,7 @@ import {
   FaInstagram,
   FaXmark,
 } from "react-icons/fa6";
-import { SyntheticEvent, useState } from "react";
+import { SyntheticEvent, useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { HiMiniBars3BottomLeft } from "react-icons/hi2";
 import { AccordionStyled } from "../../constants";
@@ -48,6 +48,14 @@ function Navbar() {
   const closeNavbarSearchStyles = {
     display: openSearchNavbar ? "block" : "none",
   };
+
+  useEffect(() => {
+    if (openMenu) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.removeAttribute("style");
+    }
+  }, [openMenu]);
 
   return (
     <Box component="header">

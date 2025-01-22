@@ -13,6 +13,7 @@ import {
   HeroCard,
   HostingCard,
   ServicesCard,
+  Tariffs,
 } from "../../components";
 import { IoGift } from "react-icons/io5";
 import { FaCheck, FaGlobe } from "react-icons/fa6";
@@ -157,6 +158,16 @@ function Home() {
               })}
             </Slider>
           </Box>
+        </Box>
+      </Box>
+
+      <Box component="section" className="tariffs">
+        <Box component="div" className="container">
+          <Typography variant="h2" className="tariffs__intro">
+            Virtual Hosting Rates
+          </Typography>
+
+          <Tariffs />
         </Box>
       </Box>
 

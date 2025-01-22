@@ -1,3 +1,4 @@
+/* Hero */
 .hero {
   padding-top: 48px;
   padding-bottom: 32px;
@@ -196,6 +197,34 @@
   text-align: left;
   color: #345389;
   font-weight: 500;
+}
+
+/* Tariffs */
+.tariffs {
+  margin: 50px 0 100px;
+}
+
+.tariffs .tariffs__intro {
+  color: #29426c;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.tariffs__tabs {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.1);
+  border: 0.5px solid rgba(0, 0, 0, 0.03);
+}
+
+.tariffs__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  font-size: 14px;
 }
 
 /* Additional services */
@@ -397,6 +426,12 @@
 }
 
 /* Responsive */
+@media screen and (max-width: 1200px) {
+  .tariffs__content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .hosting__panel-card {
     flex-direction: column;
@@ -514,6 +549,11 @@
     box-shadow: -0.5px 1px 1px rgba(0, 0, 0, 0.15);
   }
 
+  .tariffs .tariffs__intro {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
   .hosting__features {
     margin-bottom: 50px;
   }
@@ -568,6 +608,10 @@
     margin-top: 100px;
     margin-bottom: 20px;
     font-size: 32px;
+  }
+
+  .tariffs__content {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -648,5 +692,11 @@
 
   .domain__register-form button {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .tariffs__content {
+    gap: 20px;
   }
 }
