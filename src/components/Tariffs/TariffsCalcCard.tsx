@@ -26,7 +26,7 @@ function TariffsCalcCard({ data }: { data: TariffsCalcCardsTypes }) {
       <Box component="div" className="tariffsCalculator__card-header">
         {type === "clients" && (
           <Box component="span" className="tariffsCalculator__card-client">
-            Client's choice
+            Mijozlar tanlovi
           </Box>
         )}
 
@@ -34,12 +34,12 @@ function TariffsCalcCard({ data }: { data: TariffsCalcCardsTypes }) {
           {name}
         </Typography>
         <Typography variant="h4" className="tariffsCalculator__card-monthly">
-          {IP ? price.monthlyWithIp : price.monthlyWithoutIp}k uzs{" "}
-          <Box component="sup">/monthly</Box>
+          {IP ? price.monthlyWithIp : price.monthlyWithoutIp}k so'm{" "}
+          <Box component="sup">/oyiga</Box>
         </Typography>
         <Typography variant="h3" className="tariffsCalculator__card-daily">
           {IP ? +price.monthlyWithIp / 30 : +price.monthlyWithoutIp / 30}k uzs
-          daily
+          kuniga
         </Typography>
       </Box>
 
@@ -84,7 +84,7 @@ function TariffsCalcCard({ data }: { data: TariffsCalcCardsTypes }) {
         </Box>
         <Box component="div">
           <Box component="span" className="tariffsCalculator__content-text">
-            Public IP
+            Umumiy IP
           </Box>
           <Switch checked={IP} onChange={handleChange} />
         </Box>
@@ -93,7 +93,7 @@ function TariffsCalcCard({ data }: { data: TariffsCalcCardsTypes }) {
           disableElevation
           className="tariffsCalculator__content-btn"
         >
-          Order
+          Buyurtma berish
         </Button>
       </Box>
     </Box>

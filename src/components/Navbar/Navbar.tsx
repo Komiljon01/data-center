@@ -2,7 +2,7 @@ import {
   AccordionDetails,
   AccordionSummary,
   Box,
-  Stack,
+  Button,
   Typography,
 } from "@mui/material";
 import "./Navbar.css";
@@ -20,6 +20,14 @@ import { SyntheticEvent, useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { HiMiniBars3BottomLeft } from "react-icons/hi2";
 import { AccordionStyled } from "../../constants";
+
+declare global {
+  interface Window {
+    jivo_api: {
+      open: () => void;
+    };
+  }
+}
 
 function Navbar() {
   const [openSearch, setOpenSearch] = useState<boolean>(false);
@@ -57,6 +65,14 @@ function Navbar() {
     }
   }, [openMenu]);
 
+  const openChat = () => {
+    if (window.jivo_api) {
+      window.jivo_api.open();
+    } else {
+      console.error("JivoChat API is not ready yet.");
+    }
+  };
+
   return (
     <Box component="header">
       <Box component="div" className="container">
@@ -82,19 +98,24 @@ function Navbar() {
               ></path>
             </svg>
             <Typography variant="body1" className="navbar__logo-text">
-              Data Center
+              Ma'lumotlar markazi
             </Typography>
           </Link>
 
-          <Stack className="navbar__chat">
+          <Button
+            className="navbar__chat"
+            onClick={openChat}
+            disableElevation
+            disableRipple
+          >
             <Typography variant="body1" className="navbar__chat-top">
               <IoChatboxEllipses className="navbar__chat-icon" />
-              Open chat
+              Online yordam
             </Typography>
             <Typography variant="body1" className="navbar__chat-bottom">
               24/7 support
             </Typography>
-          </Stack>
+          </Button>
 
           <Box component="ul" className="navbar__lists">
             <NavbarLists menu={false} />
@@ -140,7 +161,7 @@ function Navbar() {
                 ></path>
               </svg>
               <Typography variant="body1" className="navbar__logo-text">
-                Data Center
+                Ma'lumotlar markazi
               </Typography>
             </Link>
           </Box>
@@ -199,7 +220,7 @@ function Navbar() {
                   ></path>
                 </svg>
                 <Typography variant="body1" className="navbar__menu-logo_text">
-                  Data Center
+                  Ma'lumotlar markazi
                 </Typography>
               </Link>
             </Box>
@@ -224,16 +245,16 @@ function Navbar() {
                   </AccordionSummary>
                   <AccordionDetails className="navbar__menu-link_content">
                     <Link to="">Virtual hosting</Link>
-                    <Link to="">Hosting for CMS</Link>
-                    <Link to="">Hosting for 1C-Bitrix</Link>
+                    <Link to="">CMS uchun hosting</Link>
+                    <Link to="">1C-Bitrix uchun hosting</Link>
                   </AccordionDetails>
                 </AccordionStyled>
               </Box>
               <Box component="div" className="navbar__menu-link">
-                <Link to="">VDS and VPS</Link>
+                <Link to="">VDS va VPS</Link>
               </Box>
               <Box component="div" className="navbar__menu-link">
-                <Link to="">Mail</Link>
+                <Link to="">Pochta</Link>
               </Box>
               <Box component="div" className="navbar__menu-link">
                 <AccordionStyled
@@ -245,21 +266,21 @@ function Navbar() {
                       component="span"
                       className="navbar__menu-link_text"
                     >
-                      Domains
+                      Domenlar
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails className="navbar__menu-link_content">
-                    <Link to="">Domain registration</Link>
-                    <Link to="">Whois service</Link>
-                    <Link to="">Domain transfer to Timeweb</Link>
-                    <Link to="">Domain renewal</Link>
-                    <Link to="">SSL certificates</Link>
+                    <Link to="">Domenni ro'yxatdan o'tkazish</Link>
+                    <Link to="">Whois xizmati</Link>
+                    <Link to="">Domenni Timeweb-ga o'tkazish</Link>
+                    <Link to="">Domenni yangilash</Link>
+                    <Link to="">SSL sertifikatlari</Link>
                     <Link to="">DNS hosting</Link>
                   </AccordionDetails>
                 </AccordionStyled>
               </Box>
               <Box component="div" className="navbar__menu-link">
-                <Link to="">Dedicated servers</Link>
+                <Link to="">Maxsus serverlar</Link>
               </Box>
               <Box component="div" className="navbar__menu-link">
                 <AccordionStyled
@@ -271,23 +292,23 @@ function Navbar() {
                       component="span"
                       className="navbar__menu-link_text"
                     >
-                      Website for business
+                      Biznes uchun veb-sayt
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails className="navbar__menu-link_content">
-                    <Link to="">Website builder</Link>
-                    <Link to="">Turnkey website</Link>
+                    <Link to="">Veb-sayt yaratuvchi</Link>
+                    <Link to="">Turnkey veb-sayt</Link>
                   </AccordionDetails>
                 </AccordionStyled>
               </Box>
               <Box component="div" className="navbar__menu-link">
-                <Link to="">Affiliate program</Link>
+                <Link to="">Hamkorlik dasturi</Link>
               </Box>
             </Box>
 
             <Box component="div" className="navbar__menu-footer">
               <Box component="div" className="navbar__menu-footer_intro">
-                <Typography variant="body1">Contacts</Typography>
+                <Typography variant="body1">Kontaktlar</Typography>
                 <Box component="a" href="tel:+998555013606">
                   +998 55-501-36-06
                 </Box>
@@ -336,45 +357,45 @@ function Navbar() {
               </Box>
               <Box component="div" className="navbar__search-item_content">
                 <Link to="">Virtual hosting</Link>
-                <Link to="">Hosting for CMS</Link>
-                <Link to="">Hosting for 1C-Bitrix</Link>
+                <Link to="">CMS uchun hosting</Link>
+                <Link to="">1C-Bitrix uchun hosting</Link>
               </Box>
             </Box>
             <Box component="div" className="navbar__search-item">
-              <Link to="">VDS and VPS</Link>
+              <Link to="">VDS va VPS</Link>
             </Box>
             <Box component="div" className="navbar__search-item">
-              <Link to="">Mail</Link>
+              <Link to="">Pochta</Link>
             </Box>
             <Box component="div" className="navbar__search-item">
               <Box component="div" className="navbar__search-item_text">
-                Domains
+                Domenlar
                 <FaAngleDown size="15px" />
               </Box>
               <Box component="div" className="navbar__search-item_content">
-                <Link to="">Domain registration</Link>
-                <Link to="">Whois service</Link>
-                <Link to="">Domain transfer to Timeweb</Link>
-                <Link to="">Domain renewal</Link>
-                <Link to="">SSL certificates</Link>
+                <Link to="">Domenni ro'yxatdan o'tkazish</Link>
+                <Link to="">Whois xizmati</Link>
+                <Link to="">Domenni Timeweb-ga o'tkazish</Link>
+                <Link to="">Domenni yangilash</Link>
+                <Link to="">SSL sertifikatlari</Link>
                 <Link to="">DNS hosting</Link>
               </Box>
             </Box>
             <Box component="div" className="navbar__search-item">
-              <Link to="">Dedicated servers</Link>
+              <Link to="">Maxsus serverlar</Link>
             </Box>
             <Box component="div" className="navbar__search-item">
               <Box component="div" className="navbar__search-item_text">
-                Website for business
+                Biznes uchun veb-sayt
                 <FaAngleDown size="15px" />
               </Box>
               <Box component="div" className="navbar__search-item_content">
-                <Link to="">Website builder</Link>
-                <Link to="">Turnkey website</Link>
+                <Link to="">Veb-sayt yaratuvchi</Link>
+                <Link to="">Turnkey veb-sayt</Link>
               </Box>
             </Box>
             <Box component="div" className="navbar__search-item">
-              <Link to="">Affiliate program</Link>
+              <Link to="">Hamkorlik dasturi</Link>
             </Box>
             <Box component="span" className="navbar__search-item">
               <FaSearch
@@ -393,7 +414,7 @@ function Navbar() {
             <Box
               component="input"
               type="search"
-              placeholder="Enter your search query"
+              placeholder="Qidiruv so'rovingizni kiriting"
             />
             <FaXmark
               className="navbar__search_close-btn"

@@ -33,7 +33,7 @@ const TariffContent: React.FC<{ tariffData: PricingCategory }> = ({
               <Box component="div" className="tariff__card-top">
                 {customerChoice && (
                   <Box component="span" className="customer__choice-text">
-                    Customers' Choice
+                    Mijozlar tanlovi
                   </Box>
                 )}
 
@@ -49,7 +49,7 @@ const TariffContent: React.FC<{ tariffData: PricingCategory }> = ({
                   {oldPrice && <Box component="del">{oldPrice}</Box>}
                   <Typography variant="h4">
                     {price}k uzs
-                    <Box component="sup">/month</Box>
+                    <Box component="sup">/oyiga</Box>
                   </Typography>
                 </Box>
               </Box>
@@ -87,39 +87,39 @@ const TariffContent: React.FC<{ tariffData: PricingCategory }> = ({
                   <Typography variant="body1">
                     <FaCheck />
                     <Box component="b">{services?.site} </Box>
-                    site{Number(services?.site) > 1 && "s"}
+                    ta sayt{Number(services?.site) > 1 && "lar"}
                   </Typography>
                   <Typography variant="body1">
                     <FaCheck />
+                    Tezkor NVMe disklariga
                     <Box component="b">{services?.drives} </Box>
-                    on fast NVMe drives
                   </Typography>
                   {Number(services?.databases) > 100 ? (
                     <Typography variant="body1">
                       <FaCheck />
-                      MySQL load -{" "}
+                      MySQL yuklash -{" "}
                       <Box component="b">{services?.databases} </Box>
                     </Typography>
                   ) : (
                     <Typography variant="body1">
                       <FaCheck />
-                      <Box component="b">{services?.databases} </Box>databases
+                      <Box component="b">{services?.databases} </Box>databazalar
                     </Typography>
                   )}
                   <Typography variant="body1">
                     <FaCheck />
                     <Box component="b">{services?.certificate} </Box>
-                    SSL Certificate
+                    SSL Sertifikat
                   </Typography>
                   <Typography variant="body1">
                     <FaCheck />
                     <Box component="b">{services?.mailQuota} </Box>
-                    mail quota
+                    pochta kvotasi
                   </Typography>
                   <Typography variant="body1">
                     <FaCheck />
                     <Box component="b">{services?.mailboxes} </Box>
-                    number of mailboxes
+                    pochtalar
                   </Typography>
                 </Box>
 

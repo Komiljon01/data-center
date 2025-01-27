@@ -111,10 +111,10 @@ function TariffsCalculator() {
             {name}
           </Typography>
           <Typography variant="h4" className="tariffsCalculator__monthly">
-            {totalPrice.toFixed(0)}k uzs <Box component="sup">/monthly</Box>
+            {totalPrice.toFixed(0)}k so'm <Box component="sup">/oyiga</Box>
           </Typography>
           <Typography variant="h3" className="tariffsCalculator__daily">
-            {(totalPrice / 30).toFixed(1)}k uzs daily
+            {(totalPrice / 30).toFixed(1)}k so'm kuniga
           </Typography>
         </Box>
 
@@ -212,7 +212,7 @@ function TariffsCalculator() {
           </Box>
 
           <Box component="div">
-            <Typography variant="body1">Public IP</Typography>
+            <Typography variant="body1">Umumiy IP</Typography>
             <SwitchStyled checked={IP} onChange={handleSwitchChange} />
           </Box>
 
@@ -221,7 +221,7 @@ function TariffsCalculator() {
             disableElevation
             className="tariffsCalculator__btn"
           >
-            Order
+            Buyurtma berish
           </Button>
         </Box>
       </Box>

@@ -13,7 +13,7 @@ export const TabListStyled = styled(TabList)(({ theme }) => ({
       maxHeight: "auto",
 
       ".Mui-selected": {
-        color: "#3068c3",
+        color: "#0021a3",
         backgroundColor: "#fff",
       },
     },
@@ -69,7 +69,7 @@ export const AccordionStyled = styled(Accordion)({
         alignItems: "center",
         gap: "10px",
         fontSize: "16px",
-        color: "#274068",
+        color: "#0021a3",
         fontWeight: "600",
       },
     },
@@ -84,7 +84,7 @@ export const AccordionStyled = styled(Accordion)({
 
       p: {
         fontSize: "14px",
-        color: "#274068",
+        color: "#0021a3",
         opacity: "0.8",
 
         ":last-child": {
@@ -96,7 +96,7 @@ export const AccordionStyled = styled(Accordion)({
         padding: "7px 18px",
         borderRadius: "8px",
         backgroundColor: "#c3d7f7",
-        color: "#274068",
+        color: "#0021a3",
       },
 
       ".MuiSelect-select": {

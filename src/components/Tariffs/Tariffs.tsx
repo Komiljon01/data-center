@@ -59,7 +59,7 @@ const Tariffs: React.FC = () => {
               aria-label="Main Tabs"
             >
               <Tab
-                label="Classical"
+                label="Klassik"
                 value="classical"
                 icon={<AiOutlineThunderbolt />}
                 iconPosition="start"
@@ -77,9 +77,9 @@ const Tariffs: React.FC = () => {
         <TabContext value={subTab}>
           <Box className="tariffs__sub-tabs">
             <TabListStyled onChange={handleSubTabChange} aria-label="Sub Tabs">
-              <Tab label="In a Month" value="monthly" />
-              <Tab label="In a Year" value="yearly" />
-              <Tab label="For 3 Years" value="3years" />
+              <Tab label="1 Oylik" value="monthly" />
+              <Tab label="1 yillik" value="yearly" />
+              <Tab label="3 yillik" value="3years" />
             </TabListStyled>
           </Box>
         </TabContext>
@@ -94,18 +94,18 @@ const Tariffs: React.FC = () => {
         <AccordionSummary>
           <Typography component="span" className="tariffs__filter-intro">
             {isExpanded ? <FaXmark /> : <VscSettings />}
-            Filters
+            Filter
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography variant="body1">Rate</Typography>
+          <Typography variant="body1">Tarif</Typography>
           <FormControl fullWidth>
             <Select value={mainTab} variant="standard" disableUnderline>
               <MenuItem
                 value={"classical"}
                 onClick={() => changeMainTab("classical")}
               >
-                <AiOutlineThunderbolt /> Classical
+                <AiOutlineThunderbolt /> Klassik
               </MenuItem>
               <MenuItem
                 value={"premium"}
@@ -116,20 +116,20 @@ const Tariffs: React.FC = () => {
             </Select>
           </FormControl>
 
-          <Typography variant="body1">Rental period</Typography>
+          <Typography variant="body1">Ijara muddati</Typography>
           <FormControl fullWidth>
             <Select value={subTab} variant="standard" disableUnderline>
               <MenuItem
                 value={"monthly"}
                 onClick={() => changeSubTab("monthly")}
               >
-                In a month
+                1 oylik
               </MenuItem>
               <MenuItem value={"yearly"} onClick={() => changeSubTab("yearly")}>
-                In a year
+                1 yillik
               </MenuItem>
               <MenuItem value={"3years"} onClick={() => changeSubTab("3years")}>
-                For 3 years
+                3 yillik
               </MenuItem>
             </Select>
           </FormControl>
@@ -142,7 +142,7 @@ const Tariffs: React.FC = () => {
             <CiHeadphones />
           </Box>
           <Typography variant="body1">
-            Qualified and friendly support service 24/7
+            Malakali va do'stona yordam xizmati 24/7
           </Typography>
         </Box>
         <Box component="div">
@@ -150,7 +150,7 @@ const Tariffs: React.FC = () => {
             <FaRegClock />
           </Box>
           <Typography variant="body1">
-            99.98% server uptime guarantee
+            99,98% server ish vaqti kafolati
           </Typography>
         </Box>
         <Box component="div">
@@ -158,7 +158,7 @@ const Tariffs: React.FC = () => {
             <HiOutlineSquares2X2 />
           </Box>
           <Typography variant="body1">
-            Intuitive and user-friendly control panel
+            Intuitiv va foydalanuvchilar uchun qulay boshqaruv paneli
           </Typography>
         </Box>
       </Box>

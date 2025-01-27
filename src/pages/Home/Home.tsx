@@ -78,23 +78,17 @@ function Home() {
       <Box component="section" className="home__domains">
         <Box component="div" className="container">
           <Box component="div" className="home__domains-transfer">
-            <Box className="home__domains-transfer_content">
-              <Typography
-                variant="h3"
-                className="home__domains-transfer_title1"
-              >
-                We will transfer websites, domains and mail
-              </Typography>
-              <Typography
-                variant="h3"
-                className="home__domains-transfer_title2"
-              >
-                any complexity in 24 hours!
-              </Typography>
-            </Box>
+            <Typography variant="h3" className="home__domains-transfer_title">
+              Biz{" "}
+              <Box component="span">
+                24 soat ichida har qanday murakkablikdagi
+              </Box>{" "}
+              veb-saytlar, domenlar va elektron pochta xabarlarini o'tkazamiz!
+            </Typography>
+
             <Box component="div" className="home__domains-transfer_footer">
               <Button variant="contained" disableElevation>
-                Transfer websites or domains
+                Veb-sayt yoki domenlarni o'tkazish
               </Button>
 
               <Box component="div" className="home__domains-transfer_prize">
@@ -102,8 +96,8 @@ function Home() {
                   <IoGift />
                 </Box>
                 <Typography variant="body1">
-                  We will transfer your balance from another hosting provider or
-                  give you 3 months as a gift when paying for a year
+                  Balansingizni boshqa hosting provayderidan o'tkazamiz yoki bir
+                  yil to'laganingizda sizga 3 oy sovg'a qilamiz
                 </Typography>
               </Box>
             </Box>
@@ -114,20 +108,22 @@ function Home() {
 
           <Box component="section" className="domain__register">
             <Typography variant="h4" className="domain__register-title">
-              Domain registration <Box component="span">from 50k soum</Box>
+              Domenni ro'yxatdan o'tkazish{" "}
+              <Box component="span">50k so'mdan</Box>
             </Typography>
             <Typography variant="body1" className="domain__register-text">
-              Huge selection and best prices for registration and renewal
+              Ro'yxatdan o'tish va yangilash uchun katta tanlov va eng yaxshi
+              narxlar
             </Typography>
 
             <Box component="form" className="domain__register-form">
               <Box
                 component="input"
                 type="search"
-                placeholder="Enter domain or word"
+                placeholder="Domen yoki so'zni kiriting"
               />
               <Button type="submit" variant="contained" disableElevation>
-                Check
+                Tekshirish
               </Button>
             </Box>
 
@@ -165,7 +161,7 @@ function Home() {
       <Box component="section" className="tariffs">
         <Box component="div" className="container">
           <Typography variant="h2" className="tariffs__intro">
-            Virtual Hosting Rates
+            Virtual hosting tariflari
           </Typography>
 
           <Tariffs />
@@ -179,12 +175,12 @@ function Home() {
           {/* Intro */}
           <Box component="div" className="additional__services-intro">
             <Typography variant="h2" className="additional__services-title">
-              Additional services
+              Qo'shimcha xizmatlar
             </Typography>
             <Typography variant="body1" className="additional__services-text">
-              We offer a variety of additional services to solve various
-              problems. The required option can be connected and disconnected at
-              any time.
+              Biz turli muammolarni hal qilish uchun turli xil qo'shimcha
+              xizmatlarni taklif qilamiz. Kerakli variantni istalgan vaqtda
+              ulash va o'chirish mumkin
             </Typography>
           </Box>
 
@@ -196,7 +192,7 @@ function Home() {
           </Box>
 
           <Typography variant="body1" className="additional__services-more">
-            And also:
+            Va shuningdek:
           </Typography>
 
           <Box component="div" className="additional__services-cards">
@@ -215,12 +211,12 @@ function Home() {
           {/* Intro */}
           <Box component="div" className="hosting__features-intro">
             <Typography variant="h2" className="hosting__features-title">
-              Data Center — modern and reliable hosting
+              Data Center — zamonaviy va ishonchli xosting
             </Typography>
             <Typography variant="body1" className="hosting__features-text">
-              With us you can buy hosting for a website of any complexity: from
-              a simple business card website to complex applications based on
-              1C-Bitrix.
+              Biz bilan siz har qanday murakkablikdagi veb-sayt uchun xosting
+              sotib olishingiz mumkin: oddiy vizitka veb-saytidan tortib
+              1C-Bitrix asosidagi murakkab ilovalargacha
             </Typography>
           </Box>
 
@@ -236,7 +232,7 @@ function Home() {
       <Box component="section" className="hosting__panel">
         <Box component="div" className="container">
           <Typography variant="h2" className="hosting__panel-intro">
-            Hosting Control Panel
+            Xosting boshqaruv paneli
           </Typography>
 
           <Box className="hosting__panel-card">
@@ -245,16 +241,16 @@ function Home() {
                 variant="body1"
                 className="hosting__panel-content_text"
               >
-                Data center control panel is a convenient and clear web
-                interface for managing all services, options and their settings
-                in one window
+                Ma'lumotlar markazi boshqaruv paneli - bu barcha xizmatlar,
+                variantlar va ularning sozlamalarini bir oynada boshqarish uchun
+                qulay va tushunarli veb-interfeys
               </Typography>
 
               <Typography
                 variant="body1"
                 className="hosting__panel-content_title"
               >
-                In the control panel you can:
+                Boshqaruv panelida siz:
               </Typography>
 
               <Box component="div" className="hosting__panel-features">
@@ -284,7 +280,7 @@ function Home() {
       <Box component="section" className="faq">
         <Box component="div" className="container">
           <Typography variant="h2" className="faq__intro">
-            Questions and Answers
+            Savollar va javoblar
           </Typography>
           <Box component="div" className="faq__accordions">
             <FaqAccordion />

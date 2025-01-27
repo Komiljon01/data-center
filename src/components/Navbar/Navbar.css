@@ -10,12 +10,8 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  color: #300994;
+  color: #0021a3;
   transition: color 0.3s ease;
-}
-
-.navbar__logo:hover {
-  color: #3c0bb9;
 }
 
 .navbar__logo .navbar__logo-text {
@@ -25,22 +21,29 @@
 
 .navbar__chat {
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__chat:hover {
+  background-color: transparent;
 }
 
 .navbar__chat p {
   font-size: 16px;
   font-weight: 500;
+  text-transform: capitalize;
 }
 
 .navbar__chat-top {
   display: flex;
   align-items: center;
-  color: #300994;
-  transition: color 0.3s ease;
+  color: #0021a3;
+  transition: all 0.3s ease;
 }
 
 .navbar__chat-top:hover {
-  color: #4911d6;
+  color: #021b7f;
 }
 
 .navbar__chat .navbar__chat-bottom {
@@ -60,7 +63,7 @@
   line-height: 72px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  background-color: rgba(3, 40, 107, 0.8);
+  background-color: #0021a3;
 }
 
 .navbar__search-lists {
@@ -210,6 +213,7 @@
   outline: none;
   font-size: 16px;
   background-color: transparent;
+  color: #0021a3;
 }
 
 .navbar__mobile-form input::placeholder {
@@ -390,9 +394,7 @@
   .navbar__mobile-form input {
     font-size: 14px;
   }
-}
 
-@media screen and (max-width: 320px) {
   .navbar__menu-logo {
     display: none;
   }

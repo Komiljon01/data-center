@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 import { FaFacebookF, FaInstagram } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
-import { footerAboutCompanyListsData, footerCliendsListsData, footerPartnersListsData, footerProductsListsData } from "../../constants";
+import {
+  footerAboutCompanyListsData,
+  footerCliendsListsData,
+  footerPartnersListsData,
+  footerProductsListsData,
+} from "../../constants";
 
 function Footer() {
   return (
@@ -31,12 +36,12 @@ function Footer() {
                 ></path>
               </svg>
               <Typography variant="body1" className="footer__logo-text">
-                Data Center
+                Ma'lumotlar markazi
               </Typography>
             </Link>
 
             <Box component="div" className="footer__contacts-tel">
-              <Typography variant="body1">Free in Uzbekistan</Typography>
+              <Typography variant="body1">O'zbekistonda bepul</Typography>
               <Box component="a" href="tel:+998555013606">
                 +998 55-501-36-06
               </Box>
@@ -63,7 +68,7 @@ function Footer() {
             </Box>
           </Box>
           <Box component="div" className="footer__clients">
-            <Typography variant="h5">For clients</Typography>
+            <Typography variant="h5">Mijozlar uchun</Typography>
 
             {footerCliendsListsData.map(({ id, text }) => (
               <Link to="" key={id}>
@@ -72,7 +77,7 @@ function Footer() {
             ))}
           </Box>
           <Box component="div" className="footer__partners">
-            <Typography variant="h5">For partners</Typography>
+            <Typography variant="h5">Hamkorlar uchun</Typography>
 
             {footerPartnersListsData.map(({ id, text }) => (
               <Link to="" key={id}>
@@ -81,7 +86,7 @@ function Footer() {
             ))}
           </Box>
           <Box component="div" className="footer__products">
-            <Typography variant="h5">Products</Typography>
+            <Typography variant="h5">Xizmatlar</Typography>
 
             {footerProductsListsData.map(({ id, text }) => (
               <Link to="" key={id}>
@@ -90,7 +95,7 @@ function Footer() {
             ))}
           </Box>
           <Box component="div" className="footer__about">
-            <Typography variant="h5">About the company</Typography>
+            <Typography variant="h5">Kompaniya haqida</Typography>
 
             {footerAboutCompanyListsData.map(({ id, text }) => (
               <Link to="" key={id}>

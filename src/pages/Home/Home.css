@@ -23,6 +23,18 @@
   margin-bottom: 30px;
 }
 
+.home__domains-transfer .home__domains-transfer_title {
+  max-width: 1000px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: royalblue;
+}
+
+.home__domains-transfer_title span {
+  color: #0021a3;
+}
+
 .home__domains-transfer .home__domains-transfer_title1,
 .home__domains-transfer .home__domains-transfer_title2 {
   font-weight: 700;
@@ -35,7 +47,7 @@
 }
 
 .home__domains-transfer .home__domains-transfer_title2 {
-  color: darkblue;
+  color: #0021a3;
 }
 
 .home__domains-transfer_footer {
@@ -52,14 +64,14 @@
   font-size: 16px;
   padding: 12px 32px;
   border-radius: 6px;
-  background-color: #345389;
+  background-image: linear-gradient(to right, #006eff, #0021a3);
   color: #fff;
   transition: all 0.3s ease;
   text-transform: none;
 }
 
 .home__domains-transfer_footer button:hover {
-  background-color: rgba(54, 95, 167, 0.9);
+  opacity: 0.9;
 }
 
 .home__domains-transfer_prize {
@@ -75,20 +87,20 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: rgba(52, 83, 137, 0.3);
-  color: #29426c;
+  background-color: rgba(0, 33, 163, 0.2);
+  color: #0021a3;
 }
 
 .home__domains-transfer_prize p {
   max-width: 387px;
   font-size: 16px;
   line-height: 20px;
-  color: #263c63;
+  color: #0021a3;
 }
 
 .home__domains-transfer_icon {
   position: absolute;
-  color: #345389;
+  color: #0021a3;
   opacity: 0.2;
   font-size: 300px;
   top: 0px;
@@ -110,7 +122,7 @@
 .domain__register .domain__register-title {
   font-size: 40px;
   font-weight: 700;
-  color: #345389;
+  color: #0021a3;
 }
 
 .domain__register .domain__register-title span {
@@ -118,7 +130,7 @@
 }
 
 .domain__register .domain__register-text {
-  color: #345389;
+  color: #0021a3;
   font-size: 18px;
   margin-bottom: 30px;
 }
@@ -145,26 +157,27 @@
   line-height: 19px;
   border: none;
   outline: none;
-  color: #345389;
+  color: #0021a3;
   background-color: #fff;
 }
 
 .domain__register-form input::placeholder {
   font-size: 14px;
-  color: #345389;
+  color: #0021a3;
 }
 
 .domain__register-form button {
   line-height: 20px;
   min-height: 48px;
   padding: 0 32px;
-  background-color: #345389;
+  background-image: linear-gradient(to right, #0021a3, #006eff);
   color: #fff;
   transition: all 0.3s ease;
+  text-transform: capitalize;
 }
 
 .domain__register-form button:hover {
-  background-color: rgba(54, 95, 167, 0.9);
+  opacity: 0.9;
 }
 
 .domain__register-icon {
@@ -195,7 +208,7 @@
 .home__domains-sliders .home__domains-slider p {
   font-size: 14px;
   text-align: left;
-  color: #345389;
+  color: #0021a3;
   font-weight: 500;
 }
 
@@ -205,7 +218,7 @@
 }
 
 .tariffs .tariffs__intro {
-  color: #29426c;
+  color: #0021a3;
   font-size: 48px;
   font-weight: 700;
   text-align: center;
@@ -240,13 +253,13 @@
 }
 
 .additional__services-intro .additional__services-title {
-  color: #29426c;
+  color: #0021a3;
   font-size: 48px;
   font-weight: 700;
 }
 
 .additional__services-intro .additional__services-text {
-  color: #345389;
+  color: #0021a3;
   font-size: 20px;
   line-height: 28px;
 }
@@ -259,10 +272,10 @@
 .additional__services .additional__services-more {
   text-align: center;
   margin: 30px 0;
-  color: #345389;
+  color: #0021a3;
   font-size: 24px;
   line-height: 32px;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 /* Additional Services Cards */
@@ -277,7 +290,7 @@
   background-color: #fff;
   border-radius: 16px;
   box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.1);
-  color: #345389;
+  color: #0021a3;
 }
 
 .additional__sercices-card h5 {
@@ -305,13 +318,13 @@
 }
 
 .hosting__features-intro .hosting__features-title {
-  color: #29426c;
+  color: #0021a3;
   font-size: 48px;
   font-weight: 700;
 }
 
 .hosting__features-intro .hosting__features-text {
-  color: #345389;
+  color: #0021a3;
   font-size: 20px;
   line-height: 28px;
 }
@@ -329,7 +342,7 @@
 }
 
 .hosting__panel .hosting__panel-intro {
-  color: #29426c;
+  color: #0021a3;
   font-size: 48px;
   font-weight: 700;
   text-align: center;
@@ -351,13 +364,13 @@
 }
 
 .hosting__panel-content .hosting__panel-content_text {
-  color: #345389;
+  color: #0021a3;
   font-size: 18px;
 }
 
 .hosting__panel-content .hosting__panel-content_title {
   font-weight: 700;
-  color: #29426c;
+  color: #0021a3;
   margin-top: 40px;
   margin-bottom: 16px;
 }
@@ -377,7 +390,7 @@
 .hosting__panel-feature span {
   width: 24px;
   height: 24px;
-  background-color: #345389;
+  background-color: #0021a3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -387,8 +400,7 @@
 
 .hosting__panel-feature p {
   font-size: 18px;
-  color: #29426c;
-  /* color: #345389; */
+  color: #0021a3;
 }
 
 .hosting__panel-card_img {
@@ -413,7 +425,7 @@
 }
 
 .faq .faq__intro {
-  color: #29426c;
+  color: #0021a3;
   font-size: 48px;
   font-weight: 700;
   text-align: center;
@@ -467,25 +479,13 @@
     padding: 24px 20px 0;
   }
 
-  .home__domains-transfer_content {
-    display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .home__domains-transfer .home__domains-transfer_title1,
-  .home__domains-transfer .home__domains-transfer_title2 {
+  .home__domains-transfer .home__domains-transfer_title {
     font-size: 24px;
     line-height: 120%;
   }
 
   .home__domains-transfer_footer {
     flex-direction: column-reverse;
-  }
-
-  .home__domains-transfer_footer button {
-    width: 100%;
   }
 
   .home__domains-transfer_prize span {

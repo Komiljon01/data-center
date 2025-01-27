@@ -28,7 +28,7 @@ const AccordionStyled = styled(Accordion)(({ theme }) => ({
 
     ".MuiAccordionSummary-root": {
       padding: "0",
-      color: "#29426c",
+      color: "#0021a3",
       gap: "10px",
 
       ".MuiAccordionSummary-expandIconWrapper": {
@@ -39,7 +39,7 @@ const AccordionStyled = styled(Accordion)(({ theme }) => ({
         alignItems: "center",
         justifyContent: "center",
         borderRadius: "50%",
-        color: "#29426c",
+        color: "#0021a3",
 
         [theme.breakpoints.down("sm")]: {
           width: "auto",
@@ -69,83 +69,83 @@ function FaqAccordion() {
       <AccordionStyled>
         <AccordionSummary expandIcon={<FaAngleDown />}>
           <Typography component="span" className="faq__accordion-title">
-            What is the difference between hosting, VDS, VPS and dedicated
-            server?
+            Hosting, VDS, VPS va ajratilgan server o'rtasidagi farq nima?
           </Typography>
         </AccordionSummary>
         <AccordionDetails className="faq__accordion-content">
           <Typography variant="body1" className="faq__accordion-text">
-            <Box component="span">Hosting</Box> is the simplest option for
-            hosting a project. You are given space on a server that is already
-            fully configured for website operation, and all you have to do is
-            upload files.
+            <Box component="span">Hosting</Box> bu loyihani joylashtirishning
+            eng oddiy variantidir. Sizga veb-sayt ishlashi uchun allaqachon
+            to'liq sozlangan serverda joy beriladi va siz faqat fayllarni
+            yuklashingiz kerak.
           </Typography>
           <Typography variant="body1" className="faq__accordion-text">
-            <Box component="span">VDS and VPS, or virtual server,</Box> is when
-            you are given a part of a physical server for rent, only for your
-            use. A virtual server is usually chosen when there are not enough
-            hosting resources for a project or when it requires special software
-            that cannot be installed on the hosting.
+            <Box component="span">VDS and VPS, or virtual server,</Box> sizga
+            jismoniy serverning bir qismi faqat sizning foydalanishingiz uchun
+            ijaraga beriladi. Virtual server odatda loyiha uchun xosting
+            resurslari yetarli bo‘lmaganda yoki hostingga o‘rnatib bo‘lmaydigan
+            maxsus dasturiy ta’minotni talab qilganda tanlanadi.
           </Typography>
           <Typography variant="body1" className="faq__accordion-text">
-            <Box component="span">A dedicated server</Box> is the most serious
-            solution of the listed options. You get a separate physical server
-            on which only your projects will be hosted. Dedicated servers are
-            chosen for complex, resource-intensive projects that require maximum
-            power and stability.
+            <Box component="span">Ajratilgan server</Box> sanab o'tilgan
+            variantlarning eng jiddiy yechimidir. Siz faqat loyihalaringiz
+            joylashtiriladigan alohida jismoniy serverga ega bo'lasiz.
+            Ajratilgan serverlar maksimal quvvat va barqarorlikni talab qiluvchi
+            murakkab, resurs talab qiladigan loyihalar uchun tanlanadi.
           </Typography>
         </AccordionDetails>
       </AccordionStyled>
       <AccordionStyled>
         <AccordionSummary expandIcon={<FaAngleDown />}>
           <Typography component="span" className="faq__accordion-title">
-            I already have a website and a domain. Can I transfer all this to
-            you?
+            Menda allaqachon veb-sayt va domen bor. Bularning hammasini sizga
+            olib kela olamanmi?
           </Typography>
         </AccordionSummary>
         <AccordionDetails className="faq__accordion-content">
           <Typography variant="body1" className="faq__accordion-text">
-            Yes, of course. You can transfer a registered domain in two ways:
+            Ha, albatta. Ro'yxatdan o'tgan domenni o'tkazishning ikki yo'li
+            mavjud:
           </Typography>
           <Box component="ul" className="faq__accordion-lists_num">
             <Box component="li">
-              <Link to="">Perform a technical domain transfer</Link> - in this
-              case, the domain will work with our hosting, but will be paid for
-              through the previous provider.
+              <Link to="">Texnik domenni uzatishni amalga oshiring</Link> - bu
+              holda domen bizning hosting bilan ishlaydi, lekin avvalgi
+              provayder orqali to'lanadi.
             </Box>
             <Box component="li">
-              <Link to="">
-                Transfer the domain under Data Center management
-              </Link>{" "}
-              - in this case, you will be able to renew the domain and manage
-              its settings in one panel with the hosting, which is much more
-              convenient.
+              <Link to="">Domenni Data Center boshqaruvi ostida o'tkazing</Link>{" "}
+              - bu holda siz domenni yangilash va uning sozlamalarini xosting
+              bilan bitta panelda boshqarishingiz mumkin bo'ladi, bu ancha
+              qulayroqdir. convenient.
             </Box>
           </Box>
           <Typography variant="body1" className="faq__accordion-text">
-            You can transfer the site either <Link to="">yourself</Link> or{" "}
-            <Link to="">with the help of our specialists</Link> Our specialists
-            will carefully transfer all project files and set up hosting for the
-            correct operation of the site.
+            Siz saytni <Link to="">o'zingiz</Link> or{" "}
+            <Link to="">bizning mutaxassislarimiz yordamida</Link>{" "}
+            o'tkazishingiz mumkin. Mutaxassislarimiz barcha loyiha fayllarini
+            diqqat bilan o'tkazadilar va veb-saytning to'g'ri ishlashi uchun
+            xostingni o'rnatadilar.
           </Typography>
         </AccordionDetails>
       </AccordionStyled>
       <AccordionStyled>
         <AccordionSummary expandIcon={<FaAngleDown />}>
           <Typography component="span" className="faq__accordion-title">
-            What payment methods do you have?
+            Sizda qanday to'lov usullari bor?
           </Typography>
         </AccordionSummary>
         <AccordionDetails className="faq__accordion-content">
           <Typography variant="body1" className="faq__accordion-text">
-            We offer all major payment methods:
+            Biz barcha asosiy to'lov usullarini taklif qilamiz:
           </Typography>
           <Box component="ul" className="faq__accordion-lists_circle">
-            <Box component="li">Bank cards, including foreign ones</Box>
-            <Box component="li">Wallet YouMoney</Box>
-            <Box component="li">Payment by receipt at the bank</Box>
+            <Box component="li">Bank kartalari, shu jumladan xorijiy</Box>
+            <Box component="li">YuMoney hamyon</Box>
+            <Box component="li">Bank cheki orqali to'lash</Box>
             <Box component="li">
-              Payment by invoice for legal entities and individual entrepreneurs
+              Yuridik shaxslar va yakka tartibdagi tadbirkorlar uchun
+              schyot-faktura bo'yicha to'lov
             </Box>
           </Box>
           <Box component="div" className="faq__accordion-payment">
@@ -164,108 +164,115 @@ function FaqAccordion() {
       <AccordionStyled>
         <AccordionSummary expandIcon={<FaAngleDown />}>
           <Typography component="span" className="faq__accordion-title">
-            Is it possible to purchase 1C-Bitrix and ISPmanager licenses from
-            you?
+            Sizdan 1C-Bitrix va ISPmanager litsenziyalarini sotib olish
+            mumkinmi?
           </Typography>
         </AccordionSummary>
         <AccordionDetails className="faq__accordion-content">
           <Typography variant="body1" className="faq__accordion-text">
-            Yes, you can buy both licenses from us.
+            Ha, bizdan ikkala litsenziyani ham sotib olishingiz mumkin.
           </Typography>
           <Typography variant="body1" className="faq__accordion-text">
-            <Box component="span">1C-Bitrix.</Box> We offer licenses for
-            "1C-Bitrix: Site Management" in the following editions: Start,
-            Standard, Small Business and Business. When purchasing a license,
-            you get a free year of hosting or VDS - details here .
+            <Box component="span">1C-Bitrix.</Box> Biz "1C-Bitrix: Saytni
+            boshqarish" litsenziyalarini quyidagi nashrlarda taklif etamiz:
+            Start, Standard, Small Business va Business. Litsenziyani sotib
+            olganingizda, siz bepul yil hosting yoki VDS olasiz - bu erda
+            tafsilotlar
           </Typography>
           <Typography variant="body1" className="faq__accordion-text">
-            <Box component="span">ISPmanager. </Box> We offer ISPmanager 6 all
-            editions: Lite, Pro, Host and Business. You can order ISP in your
-            control panel when creating a server or in the "Licenses" section.
-            The license is purchased for 1 month and is automatically renewed
-            once a month if there is money on the balance.
+            <Box component="span">ISPmanager. </Box> Biz ISPmanager 6 ni barcha
+            nashrlarda taklif etamiz: Lite, Pro, Host va Business. Server
+            yaratishda yoki "Litsenziyalar" bo'limida boshqaruv panelida ISPga
+            buyurtma berishingiz mumkin. Litsenziya 1 oyga sotib olinadi va agar
+            balansda pul bo'lsa, oyiga bir marta avtomatik ravishda yangilanadi.
           </Typography>
         </AccordionDetails>
       </AccordionStyled>
       <AccordionStyled>
         <AccordionSummary expandIcon={<FaAngleDown />}>
           <Typography component="span" className="faq__accordion-title">
-            What hosting plans does Data Center offer?
+            Date Center qanday hosting rejalarini taklif qiladi?
           </Typography>
         </AccordionSummary>
         <AccordionDetails className="faq__accordion-content">
           <Typography variant="body1" className="faq__accordion-text">
-            We offer different tariff lines that are suitable for a variety of
-            tasks:
+            Biz turli vazifalar uchun mos bo'lgan turli tarif liniyalarini
+            taklif etamiz:
           </Typography>
           <Box component="ul" className="faq__accordion-lists_circle">
             <Box component="li">
-              <Box component="span">Virtual hosting</Box> is a universal service
-              that is suitable for hosting most projects.
+              <Box component="span">Virtual hosting</Box> ko'pgina loyihalarni
+              joylashtirish uchun mos bo'lgan universal xizmatdir.
             </Box>
             <Box component="li">
-              <Box component="span">Hosting for CMS</Box> — specialized tariffs
-              for hosting websites created using Wordpress, Joomla and Drupal.
+              <Box component="span">CMS uchun xosting </Box> — Wordpress, Joomla
+              va Drupal yordamida yaratilgan saytlarni joylashtirish uchun
+              maxsus tariflar.
             </Box>
             <Box component="li">
-              <Box component="span">Hosting for 1C-Bitrix</Box> —
-              high-performance tariffs optimized for hosting websites on
-              1C-Bitrix and other resource-intensive projects.
+              <Box component="span">1C-Bitrix uchun hosting</Box> — 1C-Bitrix va
+              boshqa resurslarni talab qiluvchi loyihalarda veb-saytlarni
+              joylashtirish uchun optimallashtirilgan yuqori samarali tariflar.
             </Box>
           </Box>
           <Typography variant="body1" className="faq__accordion-text">
-            Within each line, you will find several tariffs that differ in the
-            number of resources offered - choose the option that your project
-            currently requires.
+            Har bir qatorda siz taklif qilingan resurslar soni bo'yicha farq
+            qiluvchi bir nechta tariflarni topasiz - hozirda loyihangiz talab
+            qiladigan variantni tanlang.
           </Typography>
         </AccordionDetails>
       </AccordionStyled>
       <AccordionStyled>
         <AccordionSummary expandIcon={<FaAngleDown />}>
           <Typography component="span" className="faq__accordion-title">
-            How to choose the right tariff for your website?
+            Veb-saytingiz uchun mos tarifni qanday tanlash mumkin?
           </Typography>
         </AccordionSummary>
         <AccordionDetails className="faq__accordion-content">
           <Typography variant="body1" className="faq__accordion-text">
-            Focus on the type and needs of your project.
+            Loyihangizning turi va ehtiyojlariga e'tibor qarating.
           </Typography>
           <Typography variant="body1" className="faq__accordion-text">
-            If the site is created on CMS Wordpress, Joomla or Drupal, pay
-            attention to the CMS hosting rates.
+            Agar sayt CMS Wordpress, Joomla yoki Drupal-da yaratilgan bo'lsa,
+            CMS hosting tariflariga e'tibor bering.
           </Typography>
           <Typography variant="body1" className="faq__accordion-text">
-            If the site requires high performance and a lot of resources, one of
-            the hosting rates for 1C-Bitrix will suit you.
+            Agar sizning veb-saytingiz yuqori unumdorlik va ko'p resurslarni
+            talab qilsa, 1C-Bitrix uchun hosting rejalaridan biri sizga mos
+            keladi.
           </Typography>
           <Typography variant="body1" className="faq__accordion-text">
-            However, in most cases, one of the virtual hosting rates will suit
-            you: Year+, Optimo+, Century+ or Millennium+. Study the parameters
-            of the rates - they differ in the number of sites, disk space, and
-            load limits. Choose the rate that seems sufficient now - you can
-            always increase it if there are not enough resources.
+            Biroq, aksariyat hollarda umumiy hosting rejalaridan biri sizga mos
+            keladi: Year+, Optimo+, Century+ yoki Millenium+. Tarif
+            parametrlarini o'rganing - ular saytlar soni, disk maydoni va
+            yuklanish cheklovlari bilan farqlanadi. Hozir etarli bo'lib
+            tuyuladigan tarifni tanlang - agar resurslar etarli bo'lmasa, uni
+            har doim oshirishingiz mumkin.
           </Typography>
         </AccordionDetails>
       </AccordionStyled>
       <AccordionStyled>
         <AccordionSummary expandIcon={<FaAngleDown />}>
           <Typography component="span" className="faq__accordion-title">
-            Why is it good to be with us?
+            Nega bizni tanlashingiz kerak?
           </Typography>
         </AccordionSummary>
         <AccordionDetails className="faq__accordion-content">
           <Typography variant="body1" className="faq__accordion-text">
-            We host your websites on modern server equipment in reliable
-            fault-tolerant data centers and guarantee website availability at
-            99.98% SLA.
+            Biz sizning veb-saytlaringizni zamonaviy server uskunalarida
+            ishonchli, nosozliklarga chidamli ma'lumotlar markazlarida
+            joylashtiramiz va veb-saytlarning SLA darajasida 99,98% mavjudligini
+            kafolatlaymiz.
           </Typography>
           <Typography variant="body1" className="faq__accordion-text">
-            Working with our hosting does not require special skills and
-            technical knowledge - you will have a convenient and understandable
-            control panel through which you can solve most problems.
+            Bizning xostingimiz bilan ishlash maxsus ko'nikmalar yoki texnik
+            bilimlarni talab qilmaydi - sizda qulay va tushunarli boshqaruv
+            paneli bo'ladi, bu orqali siz ko'pgina muammolarni hal qilishingiz
+            mumkin.
           </Typography>
           <Typography variant="body1" className="faq__accordion-text">
-            And if you need additional help - our support is always there 24/7.
+            Agar sizga qo'shimcha yordam kerak bo'lsa, bizning yordamimiz har
+            doim 24/7 mavjud.
           </Typography>
         </AccordionDetails>
       </AccordionStyled>

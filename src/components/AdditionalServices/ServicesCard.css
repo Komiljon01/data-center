@@ -13,7 +13,7 @@
 
 .services__card-content {
   max-width: 380px;
-  color: #345389;
+  color: #0021a3;
 }
 
 .services__card-content .services__card-title {
@@ -37,18 +37,18 @@
   font-size: 16px;
   padding: 12px 32px;
   border-radius: 6px;
-  background-color: #345389;
+  background-image: linear-gradient(to right, #0021a3, #006eff);
   color: #fff;
   transition: all 0.3s ease;
 }
 
 .services__card-btn:hover {
-  background-color: rgba(54, 95, 167, 0.9);
+  opacity: 0.9;
 }
 
 .services__card-img {
   position: absolute;
-  color: #345389;
+  color: #0021a3;
   opacity: 0.8;
   font-size: 100px;
   bottom: -30px;

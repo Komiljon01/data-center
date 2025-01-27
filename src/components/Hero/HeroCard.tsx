@@ -16,9 +16,12 @@ function HeroCard({ data }: Props) {
         <Typography variant="h3" className="hero__card-title">
           {title}
         </Typography>
-        <Box component="div" className="hero__card-content_price">
-          <Typography variant="body1">{price} soum</Typography>
-          <Box component="span">/ monthly</Box>
+        <Box
+          component="div"
+          className="hero__card-content_price"
+        >
+          <Typography variant="body1">{price} so'm</Typography>
+          <Box component="span">/ oylik</Box>
         </Box>
         <Typography variant="body1" className="hero__card-text">
           {text}
@@ -28,8 +31,8 @@ function HeroCard({ data }: Props) {
         </Link>
       </Box>
       <Box component="div" className="hero__card-price">
-        <Box component="span">{price} soum</Box>
-        <Typography variant="body1">monthly</Typography>
+        <Box component="span">{price} so'm</Box>
+        <Typography variant="body1">oyiga</Typography>
       </Box>
 
       <Box component="span" className="hero__card-img">
