@@ -14,7 +14,9 @@ import {
   HostingFeaturesCardsTypes,
   HostingPanelTypes,
   NavbarListsTypes,
+  TariffsCalcCardsTypes,
   TarriffsTypes,
+  TarrifsCalculatorTypes,
 } from "./../types/index";
 import uuid4 from "uuid4";
 import { MdBook, MdDisplaySettings, MdOutlineDevices } from "react-icons/md";
@@ -573,6 +575,51 @@ export const TarrifsData: TarriffsTypes = {
       },
     },
   },
+};
+
+export const TariffsCalcData: TariffsCalcCardsTypes[] = [
+  {
+    id: uuid4(),
+    name: "Cloud-15",
+    price: { monthlyWithIp: "270", monthlyWithoutIp: "135" },
+    cpu: "1 x 3.3 GHz",
+    ram: "1GB RAM",
+    nvme: "15 GB",
+    internet: "1000 Mbps",
+    publicIP: true,
+    type: "simple",
+  },
+  {
+    id: uuid4(),
+    name: "Cloud-30",
+    price: { monthlyWithIp: "495", monthlyWithoutIp: "360" },
+    cpu: "1 x 3.3 GHz",
+    ram: "2GB RAM",
+    nvme: "30 GB",
+    internet: "1000 Mbps",
+    publicIP: true,
+    type: "simple",
+  },
+  {
+    id: uuid4(),
+    name: "Cloud-40",
+    price: { monthlyWithIp: "765", monthlyWithoutIp: "630" },
+    cpu: "2 x 3.3 GHz",
+    ram: "2GB RAM",
+    nvme: "40 GB",
+    internet: "1000 Mbps",
+    publicIP: true,
+    type: "clients",
+  },
+];
+
+export const TariffsCalculatorData: TarrifsCalculatorTypes = {
+  name: "Build your server",
+  price: { monthlyWithIp: "594", monthlyWithoutIp: "459" },
+  cpu: { count: "1", pricePer: "189", max: "104" },
+  ram: { count: "1", pricePer: "108", max: "730" },
+  nvme: { count: "15", pricePer: "10.8", max: "2000" },
+  publicIP: true,
 };
 
 export const AdditionalServicesIntroCards: AdditionalServicesIntroTypes[] = [

@@ -1,0 +1,211 @@
+.tariffsCalculator__cards {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.tariffsCalculator__card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(77, 59, 59, 0.08);
+}
+
+.tariffsCalculator__card-header {
+  position: relative;
+  padding: 24px 28px 28px;
+  background-color: #8eb7fa;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.tariffsCalculator__card-client {
+  position: absolute;
+  font-size: 11px;
+  height: 28px;
+  line-height: 28px;
+  right: 0;
+  top: 0;
+  font-weight: 600;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #3068c3;
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.tariffsCalculator__card-header .tariffsCalculator__card-name {
+  font-size: 12px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #3068c3;
+}
+
+.tariffsCalculator__card-header .tariffsCalculator__card-monthly {
+  font-size: 24px;
+  font-weight: 700;
+  color: #274068;
+  margin-bottom: 4px;
+}
+
+.tariffsCalculator__card-header .tariffsCalculator__card-monthly sup {
+  font-size: 15px;
+}
+
+.tariffsCalculator__card-header .tariffsCalculator__card-daily {
+  font-size: 16px;
+  font-weight: 700;
+  color: #274068;
+}
+
+.tariffsCalculator__content {
+  padding: 24px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tariffsCalculator__content > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tariffsCalculator__content > div .tariffsCalculator__content-text {
+  font-size: 16px;
+  color: #274068;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tariffsCalculator__tooltip-icon.MuiButtonBase-root {
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  background-color: lightgray;
+  color: #fff;
+}
+
+.tooltipjon {
+  border: 1px solid red;
+}
+
+.tariffsCalculator__content > div b {
+  font-size: 18px;
+  font-weight: 600;
+  color: #274068;
+}
+
+.tariffsCalculator__content .tariffsCalculator__content-btn {
+  padding: 0 32px;
+  min-height: 48px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  background-color: #274068;
+  transition: background-color 0.3s ease;
+}
+
+.tariffsCalculator__content .tariffsCalculator__content-btn:hover {
+  background-color: #3068c3;
+}
+
+/* Tariffs Calculator */
+.tariffsCalculator {
+  background-color: #356cc6;
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(77, 59, 59, 0.08);
+}
+
+.tariffsCalculator__header {
+  padding: 24px 28px 28px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.tariffsCalculator__header .tariffsCalculator__name {
+  font-size: 12px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.tariffsCalculator__header .tariffsCalculator__monthly {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.tariffsCalculator__header .tariffsCalculator__monthly sup {
+  font-size: 15px;
+}
+
+.tariffsCalculator__header .tariffsCalculator__daily {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.tariffsCalculator__content-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tariffsCalculator__content-item p {
+  font-size: 16px;
+}
+
+.tariffsCalculator__content-item p span {
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+.tariffsCalculator__content-item input {
+  color: #fff;
+  font-size: 14px;
+}
+
+.tariffsCalculator__content .tariffsCalculator__btn {
+  padding: 0 32px;
+  min-height: 48px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  background-color: #274068;
+  transition: background-color 0.3s ease;
+}
+
+.tariffsCalculator__content .tariffsCalculator__btn:hover {
+  background-color: #2b4672;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  .tariffsCalculator__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .tariffsCalculator__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .tariffsCalculator__content-slider {
+    width: 100%;
+  }
+}

@@ -14,6 +14,7 @@ import {
   HostingCard,
   ServicesCard,
   Tariffs,
+  TariffsCalculator,
 } from "../../components";
 import { IoGift } from "react-icons/io5";
 import { FaCheck, FaGlobe } from "react-icons/fa6";
@@ -168,6 +169,8 @@ function Home() {
           </Typography>
 
           <Tariffs />
+
+          <TariffsCalculator />
         </Box>
       </Box>
 

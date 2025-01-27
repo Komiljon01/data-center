@@ -45,6 +45,13 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+/* Remove input type number arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .swiper {
   width: 100%;
   height: 100%;

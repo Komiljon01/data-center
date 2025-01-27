@@ -70,6 +70,39 @@ export type PricingStructure = Record<Duration, PricingCategory>;
 
 /* ------------------------------------ = ----------------------------------- */
 
+// Tariffs Calculator
+export interface TariffsCalcCardsTypes {
+  id: string;
+  name: string;
+  price: TariffsCalcPrice;
+  cpu: string;
+  ram: string;
+  nvme: string;
+  internet: string;
+  publicIP: boolean;
+  type: "clients" | "simple";
+}
+
+export interface TarrifsCalculatorTypes {
+  name: string;
+  price: TariffsCalcPrice;
+  cpu: priceCpuRamNvme;
+  ram: priceCpuRamNvme;
+  nvme: priceCpuRamNvme;
+  publicIP: boolean;
+}
+
+interface priceCpuRamNvme {
+  count: string;
+  pricePer: string;
+  max: string;
+}
+
+interface TariffsCalcPrice {
+  monthlyWithIp: string;
+  monthlyWithoutIp: string;
+}
+
 export interface AdditionalServicesCardsTypes {
   id: string;
   title: string;
